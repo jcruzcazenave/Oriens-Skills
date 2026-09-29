@@ -1,0 +1,430 @@
+{
+ "cliente": "Ignacio Leonel Gentile",
+ "ubicacion": "Hurlingham",
+ "provincia": "Provincia de Buenos Aires",
+ "fecha": "23 de septiembre de 2026",
+ "pie": "Propuesta On Grid e Híbrida · Ignacio Gentile",
+ "tc": 1535,
+ "titulo": "Central solar fotovoltaica",
+ "subtitulo": "Análisis del consumo posterior a la reforma y propuesta de central solar con inyección · on grid vs. híbrida sin batería · escenario conservador",
+ "h_consumo": "Cómo se está consumiendo hoy",
+ "lectura_html": [
+  "Vivienda familiar de cinco personas en Hurlingham, abastecida por Edenor en tarifa T1 residencial con bajada monofásica. La reforma sumó horno eléctrico, radiadores eléctricos, una segunda heladera, lavavajillas y lavarropas, además del aire acondicionado: la factura pasó de unos $200.000 a más de <b>$500.000 por mes</b>. Ese nivel de consumo llegó para quedarse, y por eso toda la propuesta se calcula con el consumo posterior a la reforma.",
+  "En agosto el suministro registró <b>1.849 kWh</b> en 30 días, y en junio promedió 64,6 kWh por día: dos veces y media lo de junio de 2025. La proyección anual es de <b>{consumo_anual} kWh</b>: mayo a agosto de 2026 son lecturas reales, y el resto del año se estimó a partir del consumo de cada mes más la carga de los equipos nuevos. La mejor noticia del proyecto es que el <b>{frac_diurno_pct}% del consumo es diurno</b>, justo cuando produce el sol. Cada kWh cuesta hoy <span class='gold'>$249</span> entre energía e impuestos, y el precio del kWh pasó de $147 a $190 entre abril y agosto: es lo que la central deja de pagar por cada kWh que produce.",
+  "La casa no tiene cortes de luz, y eso es una ventaja económica: no hace falta invertir en baterías y cada dólar va a generar energía. El recurso está: una losa plana de 100 m², con lugar de sobra para los 12 paneles en estructura inclinable."
+ ],
+ "h_presupuestos": "Los mismos 12 paneles, dos inversores",
+ "consumo_mensual": [
+  1395,
+  1270,
+  930,
+  840,
+  1070,
+  1872,
+  2046,
+  1849,
+  1350,
+  990,
+  900,
+  1240
+ ],
+ "frac_diurno": 0.65,
+ "costo_kwh": 249,
+ "precio_inyeccion": 95,
+ "factura_anual_ars": 5010000,
+ "base_repago": "con_iva",
+ "escalada": 0.0,
+ "escalada_optimista": 0.1,
+ "degradacion": 0.005,
+ "anios_recupero": 12,
+ "aprovechamiento_diurno": 0.93,
+ "mantenimiento_usd_anual": 120,
+ "alternativas": [
+  {
+   "nombre": "Alternativa 1",
+   "tag": "On Grid",
+   "presupuesto_nro": "005-000240",
+   "paneles": 12,
+   "wp": 630,
+   "generacion_mensual": [
+    1290,
+    1226,
+    1093,
+    943,
+    788,
+    683,
+    739,
+    868,
+    1055,
+    1094,
+    1214,
+    1258
+   ],
+   "items": [
+    {
+     "item": "Paneles solares",
+     "desc": "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · garantía 12 años",
+     "cant": 12
+    },
+    {
+     "item": "Estructuras",
+     "desc": "Kit de estructura inclinable de aluminio para losa",
+     "cant": 3
+    },
+    {
+     "item": "Inversor On Grid",
+     "desc": "Inversor Growatt On Grid monofásico 6.000 W · modelo MIN 6000TL-X2",
+     "cant": 1
+    },
+    {
+     "item": "Limitador de inyección",
+     "desc": "Medidor de corriente monofásico hasta 100 A, compatible con el inversor instalado",
+     "cant": 1
+    },
+    {
+     "item": "Mano de obra",
+     "desc": "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+     "cant": 1
+    },
+    {
+     "item": "Materiales eléctricos",
+     "desc": "Materiales eléctricos y de ferretería",
+     "cant": 1
+    },
+    {
+     "item": "Flete",
+     "desc": "Transporte de equipos y personas",
+     "cant": "Bonif."
+    }
+   ],
+   "subtotal_usd": 5755.7,
+   "iva": [
+    {
+     "pct": 21,
+     "monto": 764.3
+    },
+    {
+     "pct": 10.5,
+     "monto": 222.2
+    }
+   ],
+   "total_usd": 6742.2,
+   "financiacion": [
+    {
+     "modalidad": "Contado",
+     "detalle": "50% adelanto · 50% post instalación",
+     "cuota": "USD 3.371",
+     "total": "USD 6.742"
+    },
+    {
+     "modalidad": "6 cuotas",
+     "detalle": "40% adelanto · 60% en 6 cuotas",
+     "cuota": "USD 694",
+     "total": "USD 6.861"
+    },
+    {
+     "modalidad": "12 cuotas",
+     "detalle": "30% adelanto · 70% en 12 cuotas",
+     "cuota": "USD 419",
+     "total": "USD 7.055"
+    },
+    {
+     "modalidad": "24 cuotas",
+     "detalle": "20% adelanto · 80% en 24 cuotas",
+     "cuota": "USD 259",
+     "total": "USD 7.564"
+    }
+   ]
+  },
+  {
+   "nombre": "Alternativa 2",
+   "tag": "Híbrida preparada para batería",
+   "presupuesto_nro": "005-000241",
+   "paneles": 12,
+   "wp": 630,
+   "generacion_mensual": [
+    1290,
+    1226,
+    1093,
+    943,
+    788,
+    683,
+    739,
+    868,
+    1055,
+    1094,
+    1214,
+    1258
+   ],
+   "items": [
+    {
+     "item": "Paneles solares",
+     "desc": "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · garantía 12 años",
+     "cant": 12
+    },
+    {
+     "item": "Estructuras",
+     "desc": "Kit de estructura inclinable de aluminio para losa",
+     "cant": 3
+    },
+    {
+     "item": "Inversor híbrido",
+     "desc": "Inversor Deye híbrido monofásico 8 kW · picos de hasta 12.000 W · 2 MPPT · WiFi y limitador de inyección incluidos",
+     "cant": 1
+    },
+    {
+     "item": "Mano de obra",
+     "desc": "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+     "cant": 1
+    },
+    {
+     "item": "Materiales eléctricos",
+     "desc": "Materiales eléctricos y de ferretería",
+     "cant": 1
+    },
+    {
+     "item": "Flete",
+     "desc": "Transporte de equipos y personas",
+     "cant": "Bonif."
+    }
+   ],
+   "subtotal_usd": 6682.8,
+   "iva": [
+    {
+     "pct": 21,
+     "monto": 966.4
+    },
+    {
+     "pct": 10.5,
+     "monto": 218.5
+    }
+   ],
+   "total_usd": 7867.7,
+   "financiacion": [
+    {
+     "modalidad": "Contado",
+     "detalle": "50% adelanto · 50% post instalación",
+     "cuota": "USD 3.934",
+     "total": "USD 7.868"
+    },
+    {
+     "modalidad": "6 cuotas",
+     "detalle": "40% adelanto · 60% en 6 cuotas",
+     "cuota": "USD 810",
+     "total": "USD 8.006"
+    },
+    {
+     "modalidad": "12 cuotas",
+     "detalle": "30% adelanto · 70% en 12 cuotas",
+     "cuota": "USD 489",
+     "total": "USD 8.232"
+    },
+    {
+     "modalidad": "24 cuotas",
+     "detalle": "20% adelanto · 80% en 24 cuotas",
+     "cuota": "USD 302",
+     "total": "USD 8.826"
+    }
+   ]
+  }
+ ],
+ "intro_resultados": "Las dos alternativas usan los mismos 12 paneles: producen lo mismo y ahorran lo mismo. <b style='color:#000'>El repago que se informa es un panorama conservador: no considera ningún aumento de la tarifa eléctrica.</b> Además, se toma un aprovechamiento diurno del 93%, el excedente se valoriza a la mitad del precio limpio de la energía y se descuenta un mantenimiento anual.",
+ "nota_resultados": "<b>Qué se paga con la diferencia.</b> La Alternativa 2 cuesta USD 1.126 más con IVA y rinde lo mismo hoy: esa diferencia paga un inversor de mayor potencia, preparado para sumar paneles y batería, y que sigue trabajando ante un corte de red. <b style='color:#000'>Por qué el escenario es conservador.</b> <b style='color:#000'>No se asume ninguna suba de la tarifa, aunque el kWh que paga la casa pasó de $147 a $190 entre abril y agosto</b> (por las subas de tarifa y por el cambio de categoría que trajo el mayor consumo), y el excedente se valoriza a la mitad del precio de la energía. El repago informado es un piso: con una suba tarifaria del 10% anual en dólares, la inversión se recupera en {repopt1} en la Alternativa 1 y en {repopt2} en la Alternativa 2.",
+ "cap_grafico_unico": "Ambas alternativas · 12 paneles · 7,56 kWp",
+ "cap_tabla_gen": "La generación es la misma en las dos alternativas: comparten los 12 paneles y la estructura.",
+ "metodologia": [
+  {
+   "t": "Cuánto genera la central.",
+   "d": "La generación mensual surge del simulador de Oriens para 12 módulos de 630 Wp: {gen1} kWh/año, igual en las dos alternativas. Se aplica una degradación de los módulos del 0,5% anual."
+  },
+  {
+   "t": "Cuánto vale cada kWh.",
+   "d": "Lo autoconsumido se valoriza a <span class='gold'>$249/kWh</span>: el cargo variable de la energía ($189,80/kWh) más los impuestos y contribuciones que se pagan en proporción al consumo, IVA incluido porque no se recupera. El kWh inyectado se reconoce a <b>$95/kWh</b>, el 50% del precio limpio de la energía, sin impuestos."
+  },
+  {
+   "t": "Autoconsumo vs. inyección.",
+   "d": "Se considera un consumo {frac_diurno_pct}% diurno y el resto nocturno. Mes a mes, la generación cubre primero el consumo diurno, con un aprovechamiento del 93% para contemplar los momentos en que la producción instantánea supera la demanda de la casa. Lo que excede se inyecta a la red."
+  },
+  {
+   "t": "Cómo crece el ahorro.",
+   "d": "No se asume ninguna suba real de la tarifa: el ahorro se mantiene <span class='gold'>constante en dólares</span> y se descuentan USD 120 anuales de mantenimiento preventivo. Toda suba real de la energía de red acorta el recupero."
+  },
+  {
+   "t": "Cuándo se recupera.",
+   "d": "El repago se calcula sobre la inversión total con IVA. El año en que el ahorro acumulado supera la inversión marca el recupero informado en la comparativa."
+  }
+ ],
+ "incluye": [
+  {
+   "t": "Central llave en mano",
+   "d": "Asesoramiento, ingeniería de proyecto, flete, instalación y puesta en marcha. No tercerizamos: el mismo equipo Oriens acompaña desde el relevamiento hasta el encendido."
+  },
+  {
+   "t": "Relevamiento técnico de la losa",
+   "d": "Antes del cierre relevamos la losa para definir la orientación y la disposición de las dos filas de paneles, verificar el estado de la cubierta y la carga de la estructura inclinable con sus lastres, y ubicar inversor y canalizaciones."
+  },
+  {
+   "t": "Alivio para la bajada monofásica",
+   "d": "La central trabaja en paralelo con la red sobre el mismo tablero: horno, lavavajillas, lavarropas y aire toman primero lo que están generando los paneles y la red completa sólo la diferencia. En las horas de sol, la bajada deja de cargar sola con los consumos simultáneos de la casa. Incluye limitador de inyección y monitoreo remoto por WiFi."
+  },
+  {
+   "t": "La híbrida: más potencia, preparada para crecer y para los cortes",
+   "d": "El inversor híbrido es de <b>8 kW</b>, contra 6 kW del on grid: admite sumar paneles más adelante sin cambiar el equipo, un margen valioso para una casa cuyo consumo ya creció con la reforma. Admite además sumar batería el día de mañana, que cubriría la noche y los picos de simultaneidad que hoy recaen sobre la bajada. Y frente a un corte de red, el on grid se apaga por norma de seguridad y corre la misma suerte que la distribuidora; el híbrido, en cambio, puede seguir alimentando los circuitos de respaldo con la energía de los paneles mientras haya sol, y con batería lo haría también de noche y sin depender del clima. En todos los casos, la potencia de inyección se ajusta a la que habilite Edenor."
+  },
+  {
+   "t": "Garantías y plazos",
+   "d": "Paneles con 12 años de garantía de producto y 30 años de rendimiento, inversor 5 años, más garantía propia de instalación de 1 año. Plazo de instalación de 15 a 20 días corridos desde el pago del anticipo. Normas IRAM y Ley 27.424."
+  }
+ ],
+ "nota_alternativas": "<b>La misma central, dos caminos.</b> La <b>Alternativa 1</b> (On Grid) es la inversión más eficiente hoy: el mismo ahorro con menor inversión y el repago más corto, pero depende por completo de la red. La <b>Alternativa 2</b> (híbrida) rinde exactamente lo mismo hoy y suma tres ventajas que el on grid no tiene: un inversor de mayor potencia para ampliar con más paneles, la posibilidad de agregar batería sin cambiar el equipo, y la capacidad de seguir generando para la casa ante un corte de red. En las dos, la central cubre el {cob1}% del consumo anual proyectado.",
+ "sub_fichas": "Los mismos paneles y la misma estructura en las dos alternativas: sólo cambia el inversor",
+ "fichas": [
+  {
+   "img": "img_panel.png",
+   "tipo": "Panel solar · ambas alternativas",
+   "titulo": "Jinko Tiger Neo 630 Wp · bifacial N-type",
+   "specs": [
+    [
+     "Tecnología",
+     "N-type monocristalina TOPCon"
+    ],
+    [
+     "Potencia (Pmax)",
+     "630 Wp · hasta ~696 Wp bifacial"
+    ],
+    [
+     "Eficiencia",
+     "≈ 22,5 %"
+    ],
+    [
+     "Dimensiones / peso",
+     "2.382 × 1.134 × 30 mm · ~32 kg"
+    ],
+    [
+     "Garantía",
+     "12 años producto · 30 años lineal"
+    ],
+    [
+     "Cantidad",
+     "12 (dos cadenas de 6)"
+    ]
+   ]
+  },
+  {
+   "img": "img_inversor_growatt_min.png",
+   "tipo": "Inversor · Alternativa 1",
+   "titulo": "Growatt MIN 6000TL-X2 · On Grid monofásico",
+   "specs": [
+    [
+     "Potencia nominal",
+     "6.000 W · 240 V monofásico"
+    ],
+    [
+     "Potencia FV admitida",
+     "hasta 9.000 W"
+    ],
+    [
+     "MPPT",
+     "2 seguidores independientes"
+    ],
+    [
+     "Eficiencia máxima",
+     "98,4 %"
+    ],
+    [
+     "Ante un corte de red",
+     "Se apaga por seguridad (anti-isla)"
+    ],
+    [
+     "Protección / monitoreo",
+     "IP66 · WiFi"
+    ],
+    [
+     "Garantía",
+     "5 años"
+    ]
+   ]
+  },
+  {
+   "img": "img_inversor_deye.png",
+   "tipo": "Inversor · Alternativa 2",
+   "titulo": "Deye híbrido monofásico 8 kW",
+   "specs": [
+    [
+     "Potencia nominal",
+     "8.000 W · picos de hasta 12.000 W"
+    ],
+    [
+     "Tipo",
+     "Híbrido monofásico, preparado para batería"
+    ],
+    [
+     "Ante un corte de red",
+     "Alimenta los circuitos de respaldo con los paneles"
+    ],
+    [
+     "MPPT",
+     "2 seguidores · admite ampliar paneles"
+    ],
+    [
+     "Limitador / monitoreo",
+     "Incluido · WiFi, app Deye"
+    ],
+    [
+     "Garantía",
+     "5 años"
+    ]
+   ]
+  },
+  {
+   "img": "img_estr_plano.png",
+   "tipo": "Estructura · losa plana",
+   "titulo": "Kit inclinable de aluminio",
+   "specs": [
+    [
+     "Material",
+     "Aluminio · tornillería inoxidable"
+    ],
+    [
+     "Montaje",
+     "Inclinado sobre losa, con lastres"
+    ],
+    [
+     "Ventajas",
+     "Mejor ángulo de captación · anticorrosión"
+    ],
+    [
+     "Cantidad",
+     "3 kits"
+    ]
+   ]
+  }
+ ],
+ "nota_fichas": "El sistema se completa con el <b>limitador de inyección</b> (en la Alternativa 1, medidor de corriente monofásico hasta 100 A compatible con el inversor; en la Alternativa 2, incluido con el equipo), materiales eléctricos y de ferretería, y la mano de obra especializada de Oriens.",
+ "mostrar_tabla_recupero": false,
+ "notas_financiacion": [
+  "Los valores expresados incluyen IVA.",
+  "Financiación propia ORIENS Energía Solar, instrumentada mediante contrato de mutuo entre las partes y emisión de pagarés o e-cheqs electrónicos por cuota.",
+  "Financiación en USD oficiales Banco Nación; el tipo de cambio se toma al valor del día de cada pago.",
+  "Tipo de cambio de referencia de esta propuesta: $1.535 por dólar (BNA venta, 23 de septiembre de 2026)."
+ ],
+ "pasos": [
+  {
+   "t": "Visita técnica previa",
+   "d": "Relevamos en el lugar la losa: estado de la cubierta, orientación, disposición de los paneles y apoyo de la estructura con sus lastres. Definimos el recorrido de las canalizaciones, la ubicación del inversor y el punto de conexión al tablero monofásico, y revisamos la capacidad de la bajada."
+  },
+  {
+   "t": "Elección de la alternativa y firma",
+   "d": "Con el relevamiento cerrado se confirma la alternativa y la modalidad de pago, y se firma el contrato con el anticipo correspondiente."
+  },
+  {
+   "t": "Provisión e instalación",
+   "d": "Instalación de 15 a 20 días corridos desde el pago del anticipo, con personal propio de Oriens y conforme a normas IRAM."
+  },
+  {
+   "t": "Puesta en marcha y monitoreo",
+   "d": "Encendido de la central, configuración del limitador de inyección y del monitoreo remoto por WiFi, y entrega de la app para seguir generación y consumo en tiempo real."
+  }
+ ],
+ "resumen_html": "<b>En resumen.</b> La misma central de 12 paneles (7,56 kWp) con dos inversores: <b>On Grid</b> por {tot1} con IVA, con repago de {rep1}, la opción de mayor retorno hoy; e <b>híbrida</b> por {tot2} con IVA, con repago de {rep2}, con un inversor de 8 kW preparado para sumar paneles y batería, y que sigue trabajando ante un corte de red. Las dos generan {gen1} kWh/año y ahorran {ahorro1} por año."
+}

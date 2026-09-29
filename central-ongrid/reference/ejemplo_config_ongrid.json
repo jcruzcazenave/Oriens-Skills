@@ -1,0 +1,204 @@
+{
+ "cliente": "Germán Llacomotti",
+ "ubicacion": "Manuel Alberti, Partido de Pilar",
+ "provincia": "Provincia de Buenos Aires",
+ "fecha": "17 de septiembre de 2026",
+ "presupuesto_nro": "005-000198",
+ "tc": 1535,
+ "titulo": "Central solar fotovoltaica",
+ "subtitulo": "Análisis del escenario actual y propuesta de central On Grid · escenario conservador",
+ "h_consumo": "Cómo se está consumiendo hoy",
+ "perfil_html": "<p>El establecimiento es una carnicería en Manuel Alberti, Partido de Pilar, con suministro de Edenor bajo tarifa T1-G3. El predio cuenta con dos acometidas: una trifásica, que concentra la carga de refrigeración y es donde se juega el gasto eléctrico del negocio, y una monofásica con medición independiente. Esta propuesta trabaja sobre la acometida trifásica, que es donde está el costo que vale la pena atacar primero.</p>",
+ "consumo_html": "<p>El suministro registró <b>3.301 kWh</b> en el último período de 30 días y proyecta unos <b>51.100 kWh anuales</b>. El consumo es marcadamente estacional: el verano duplica al invierno por la exigencia de las cámaras de frío, con picos cercanos a los 6.000 kWh en enero contra 2.989 kWh en junio. Y acá aparece la mejor noticia del proyecto: cerca del <b>70% de la demanda ocurre en horario diurno</b>, justo cuando los paneles producen. No hay energía que se desperdicie ni que haya que almacenar: todo lo que la central genera se consume en el momento, al valor más alto posible. Considerando el cargo variable de energía más los impuestos que se pagan en proporción al consumo, cada kWh cuesta hoy <span class='gold'>$425 por kWh</span>. Ese es el precio que la central deja de pagar por cada kWh que produce.</p>",
+ "objetivo_html": "<p>El objetivo es claro: bajar la factura. El establecimiento no sufre cortes de suministro, así que no hay necesidad de baterías ni de respaldo, y eso es una ventaja económica concreta. Cada dólar invertido se destina íntegramente a generar energía, sin gastar una parte en acumulación. Es el esquema con el recupero más rápido que existe.</p>",
+ "recurso_html": "<p>La central se instala sobre techo de losa, con unos 50 m² disponibles. Es una superficie acotada, y por eso el diseño se optimiza para aprovechar cada metro: la disposición de los módulos se define para colocar la mayor potencia posible en el área real del techo, verificada en el relevamiento técnico previo que Oriens realiza antes del cierre. El resultado es una central dimensionada al milímetro del recurso disponible, sin superficie desperdiciada.</p>",
+ "h_presupuesto": "La central propuesta",
+ "sistema": {
+  "etiqueta": "Central On Grid · 16 paneles",
+  "paneles": 16,
+  "wp": 630,
+  "inversor": "Inversor Deye On Grid trifásico 15 kW · conexión a red",
+  "inversor_corto": "Inversor Deye 15 kW"
+ },
+ "items": [
+  {
+   "item": "Paneles solares",
+   "desc": "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp",
+   "cant": 16
+  },
+  {
+   "item": "Estructuras",
+   "desc": "Kit de estructura inclinable de aluminio para losa",
+   "cant": 4
+  },
+  {
+   "item": "Inversor On Grid",
+   "desc": "Inversor Deye On Grid trifásico 15 kW · IP65 · monitoreo WiFi incluido",
+   "cant": 1
+  },
+  {
+   "item": "Limitador de inyección",
+   "desc": "Medidor de corriente trifásico hasta 100 A, compatible con el inversor instalado",
+   "cant": 1
+  },
+  {
+   "item": "Mano de obra",
+   "desc": "Ingeniería, puesta en marcha, mano de obra especializada y garantía de instalación",
+   "cant": 1
+  },
+  {
+   "item": "Materiales eléctricos",
+   "desc": "Materiales eléctricos y de ferretería",
+   "cant": 1
+  },
+  {
+   "item": "Flete",
+   "desc": "Transporte de equipos y personas",
+   "cant": "Bonificado"
+  }
+ ],
+ "subtotal_usd": 6991.2,
+ "iva": [
+  {
+   "pct": 21,
+   "monto": 1053.4
+  },
+  {
+   "pct": 10.5,
+   "monto": 291.4
+  }
+ ],
+ "total_usd": 8336.0,
+ "consumo_mensual": [
+  6000,
+  5700,
+  5072,
+  4539,
+  3102,
+  2989,
+  3167,
+  3301,
+  3500,
+  3900,
+  4500,
+  5300
+ ],
+ "generacion_mensual": [
+  1720,
+  1634,
+  1457,
+  1257,
+  1051,
+  911,
+  986,
+  1157,
+  1407,
+  1460,
+  1618,
+  1678
+ ],
+ "frac_diurno": 0.7,
+ "costo_kwh": 425,
+ "precio_inyeccion": 0,
+ "factura_anual_ars": 23461910,
+ "base_repago": "con_iva",
+ "escalada": 0.0,
+ "degradacion": 0.005,
+ "anios_recupero": 12,
+ "mostrar_recupero": true,
+ "h_incluye": "Qué es y qué incluye",
+ "sub_incluye": "Una central lista para producir, llave en mano y 100% Oriens",
+ "intro_incluye": "Más que vender equipos, entregamos una central solar lista para generar energía. La solución Oriens es integral y llave en mano: nos ocupamos de todo el proceso, de principio a fin, con personal propio.",
+ "incluye": [
+  {
+   "t": "Central llave en mano",
+   "d": "Incluye asesoramiento, ingeniería de proyecto, flete, instalación y puesta en marcha. No tercerizamos: el mismo equipo Oriens acompaña desde el relevamiento hasta el encendido."
+  },
+  {
+   "t": "Relevamiento y coordinación con la obra",
+   "d": "Antes del cierre realizamos el relevamiento técnico del techo de losa para verificar la superficie útil, definir la disposición de los módulos y confirmar la cantidad final de paneles. Nos ponemos a disposición para coordinar con el electricista del establecimiento y prever la ubicación de tableros y canalizaciones, evitando retrabajos."
+  },
+  {
+   "t": "Autoconsumo trifásico con monitoreo",
+   "d": "La central se dimensiona para autoconsumo: producir la energía que la carnicería usa durante el día, cuando las cámaras de frío más exigen. Incluye un medidor de corriente trifásico que regula la inyección y monitoreo remoto por WiFi para seguir generación y consumo en tiempo real."
+  },
+  {
+   "t": "Preparada para crecer",
+   "d": "El inversor se dimensiona con margen sobre la potencia instalada: si en el futuro se libera superficie en el techo o crece la actividad del comercio, se suman paneles sin reemplazar el equipo ni rehacer lo instalado."
+  },
+  {
+   "t": "Garantías y plazos",
+   "d": "Garantía internacional de los productos: paneles con 12 años de producto y 30 años de rendimiento, inversor 5 años, más garantía propia de instalación de 1 año. Plazo de instalación de 15 a 20 días corridos desde el pago del anticipo. Normas IRAM y Ley 27.424."
+  }
+ ],
+ "h_condiciones": "Resultados proyectados",
+ "condiciones": [],
+ "h_resultados": "Qué resultado produce la central",
+ "intro_resultados": "La central cubre una porción del consumo anual y la concentra en el horario de mayor demanda. Los resultados que siguen se calculan bajo un <b>escenario deliberadamente conservador</b>: disposición Este-Oeste de los módulos, aprovechamiento diurno del 93%, excedente no remunerado y tarifa eléctrica constante en dólares. Cualquier desvío razonable de estos supuestos mejora el resultado, no lo empeora.",
+ "nota_resultados": "<b>Por qué el escenario es conservador.</b> No se asume ninguna suba de la tarifa eléctrica por encima de la inflación en dólares, cuando la tendencia de los últimos años fue de aumentos reales sostenidos. Tampoco se computa ingreso por el excedente volcado a la red, ni se considera la disposición de módulos de mayor rendimiento. El repago informado es, por lo tanto, un piso: con una suba tarifaria del 10% anual en dólares, la inversión se recupera en aproximadamente un año y medio.",
+ "h_generacion": "Generación esperada y cómo se calcula el repago",
+ "cap_grafico": "Generación solar mes a mes de la central propuesta, contrastada con el consumo total del suministro y con la porción que se consume en horario diurno.",
+ "metodologia": [
+  {
+   "t": "Cuánto genera el sistema.",
+   "d": "16 paneles de 630 Wp (10,08 kWp) sobre techo de losa. La simulación de generación se ajusta a una disposición Este-Oeste, que es la que permite instalar los 16 módulos en la superficie disponible, con un rendimiento un 10% inferior a la orientación norte. La generación anual proyectada resulta de 16.336 kWh, con una degradación de los módulos del 0,5% anual."
+  },
+  {
+   "t": "Cuánto vale cada kWh.",
+   "d": "Lo que se autoconsume se valoriza al costo real de <span class='gold'>$425/kWh</span>, que es lo que el establecimiento deja de pagar: el cargo variable de energía más los impuestos que se pagan en proporción al consumo. El excedente volcado a la red <b>no se valoriza</b> en este análisis, por criterio conservador."
+  },
+  {
+   "t": "Autoconsumo vs. inyección.",
+   "d": "El consumo diurno del establecimiento supera a la generación en todos los meses del año. Aun así, se asume un aprovechamiento del <b>93%</b> de lo generado y no del 100%, para contemplar los momentos puntuales en que la producción instantánea excede la demanda del comercio. El 7% restante se considera no remunerado."
+  },
+  {
+   "t": "Cómo crece el ahorro.",
+   "d": "No se asume ninguna suba de la tarifa eléctrica en términos reales: el ahorro se mantiene <span class='gold'>constante en dólares</span> a lo largo de todo el período analizado, y se le descuenta el mantenimiento preventivo anual. Es el escenario más exigente para el proyecto. Toda suba real de la energía de red acorta el recupero."
+  },
+  {
+   "t": "Cuándo se recupera.",
+   "d": "Con esos supuestos, la inversión total se recupera en el plazo que detalla la tabla de la página siguiente. Después queda más de dos décadas de ahorro neto, sobre una vida útil de unos 25 años."
+  }
+ ],
+ "h_recupero": "Recupero de la inversión",
+ "intro_recupero": "Evolución del ahorro año por año, en dólares, contrastado con la inversión total de la central. El año resaltado es aquel en el que el ahorro acumulado supera la inversión.",
+ "nota_recupero": "<b>Cómo leer la tabla.</b> El ahorro de cada año se calcula a tarifa constante en dólares, descontada la degradación de los paneles del 0,5% anual y el mantenimiento preventivo anual. El resultado neto es la diferencia entre el ahorro acumulado y la inversión total con IVA: a partir del año resaltado, todo lo que la central produce es ganancia. No se asume ninguna mejora tarifaria: si la energía de red se encarece en términos reales, el recupero se adelanta.",
+ "h_financiacion": "Planes de pago disponibles",
+ "cap_financiacion": "Planes calculados para esta propuesta, en dólares oficiales (Banco Nación venta). El total incluye IVA.",
+ "financiacion": [
+  {
+   "modalidad": "Contado",
+   "adelanto": "50% adelanto (USD 4.168) · 50% post instalación",
+   "cuota": "USD 4.168",
+   "total": "USD 8.336"
+  },
+  {
+   "modalidad": "6 cuotas",
+   "adelanto": "40% adelanto (USD 3.334) · 60% en 6 cuotas",
+   "cuota": "USD 858",
+   "total": "USD 8.483"
+  },
+  {
+   "modalidad": "12 cuotas",
+   "adelanto": "30% adelanto (USD 2.501) · 70% en 12 cuotas",
+   "cuota": "USD 518",
+   "total": "USD 8.722"
+  },
+  {
+   "modalidad": "24 cuotas",
+   "adelanto": "20% adelanto (USD 1.667) · 80% en 24 cuotas",
+   "cuota": "USD 320",
+   "total": "USD 9.352"
+  }
+ ],
+ "notas_financiacion": [
+  "Los valores expresados incluyen IVA.",
+  "Financiación propia ORIENS Energía Solar, instrumentada mediante contrato de mutuo entre las partes y emisión de pagarés o e-cheqs electrónicos por cuota.",
+  "Financiación en USD oficiales Banco Nación; el tipo de cambio se toma al valor del día de cada pago.",
+  "Tipo de cambio de referencia de esta propuesta: $1.535 por dólar (BNA venta, 17 de septiembre de 2026)."
+ ],
+ "aprovechamiento_diurno": 0.93,
+ "mantenimiento_usd_anual": 120,
+ "eyebrow_resultados": "Resultados",
+ "sub_condiciones": "Qué produce la central y en cuánto se recupera la inversión"
+}

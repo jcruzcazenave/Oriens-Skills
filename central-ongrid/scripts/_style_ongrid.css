@@ -1,0 +1,104 @@
+@page { size:A4; margin:22mm 15mm 12mm 15mm;
+  @top-left { content:element(rh); vertical-align:middle; }
+  @bottom-left { content:"Oriens Energía Solar"; font-family:Lato; font-size:7.5px; color:#b3b3b3; }
+  @bottom-right { content:"Propuesta Oriens · Pág. " counter(page); font-family:Lato; font-size:7.5px; color:#b3b3b3; }
+}
+*{box-sizing:border-box;}
+body{font-family:Lato,sans-serif;color:#454545;font-size:10.4px;line-height:1.5;margin:0;}
+.rh{position:running(rh);width:100%;padding-top:4mm;border-bottom:1px solid #eee7dc;padding-bottom:2mm;}
+.rh svg{height:34px;width:auto;}
+.page{page-break-after:always;}
+.page:last-child{page-break-after:auto;}
+h1{font-family:Poppins;font-size:28px;font-weight:700;margin:2px 0 4px;color:#242424;letter-spacing:-.4px;}
+.sub{color:#8f8f8f;font-size:12.5px;margin:0 0 13px;font-weight:300;}
+.eyebrow{color:#c99320;font-family:Poppins;font-size:9px;font-weight:600;letter-spacing:2.6px;text-transform:uppercase;margin:0 0 3px;}
+h2{font-family:Poppins;font-size:16.5px;font-weight:600;color:#242424;margin:0 0 4px;}
+h2 .light{font-weight:300;color:#9a9a9a;}
+p{margin:0 0 9px;}
+hr{border:0;border-top:1px solid #eae7e1;margin:11px 0;}
+b,strong{color:#242424;font-weight:700;}
+.prep{font-family:Poppins;font-size:8px;letter-spacing:2px;color:#b4b4b4;text-transform:uppercase;margin:0 0 3px;font-weight:600;}
+.prepline{font-size:10px;color:#555;margin:0 0 11px;}
+.cards{display:flex;gap:9px;margin:12px 0 4px;}
+.card{flex:1;background:#faf9f6;border:1px solid #ece9e2;border-radius:13px;padding:11px 13px;}
+.card .big{font-family:Poppins;font-size:16.5px;font-weight:700;color:#242424;}
+.card.green{background:#f2f8ee;border-color:#dcecd2;}
+.card.green .big{color:#4e9e3a;}
+.card.gold .big{color:#c99320;}
+.card .cap{font-size:8.6px;color:#8f8f8f;line-height:1.35;margin-top:3px;}
+.card .tag{display:inline-block;width:22px;height:3px;border-radius:2px;background:#e0a92a;margin-bottom:7px;}
+.card.green .tag{background:#4e9e3a;}.card.gray .tag{background:#b7b7b7;}
+.stats{display:flex;gap:10px;margin:11px 0;}
+.stat{flex:1;background:#f6f4ef;border-radius:13px;padding:11px 13px;}
+.stat .big{font-family:Poppins;font-size:18px;font-weight:700;color:#242424;}
+.stat.g .big{color:#4e9e3a;}
+.stat .cap{font-size:8.6px;color:#8f8f8f;margin-top:2px;}
+table{width:100%;border-collapse:collapse;margin:6px 0;}
+th{text-align:left;font-family:Poppins;font-size:7.6px;letter-spacing:1px;text-transform:uppercase;color:#a2a2a2;font-weight:600;padding:5px 7px;border-bottom:1.5px solid #e2ded7;}
+td{font-size:9.6px;padding:5px 7px;border-bottom:1px solid #f0eee9;color:#4b4b4b;}
+td.c{color:#b0aca4;width:16px;}
+td.b{font-weight:700;color:#242424;white-space:nowrap;}
+td.r,th.r{text-align:right;}
+tr.total td{font-family:Poppins;font-weight:700;color:#242424;font-size:10.5px;border-top:2px solid #d6d2ca;border-bottom:none;padding-top:8px;}
+tr.total2 td{font-family:Poppins;font-weight:700;color:#c99320;font-size:10.5px;border-bottom:none;padding-top:2px;}
+tr.hl td{background:#fbf3df;font-weight:700;color:#242424;}
+tr.hl td:first-child{border-top-left-radius:8px;border-bottom-left-radius:8px;}
+tr.hl td:last-child{border-top-right-radius:8px;border-bottom-right-radius:8px;}
+.note{border-radius:12px;background:#fbf7ec;border:1px solid #f0e6cc;padding:9px 13px;font-size:9px;color:#6b6357;margin:10px 0;line-height:1.5;}
+.note b{color:#7a6a3c;}
+.chart{width:100%;height:auto;margin:4px 0 2px;}
+.cap-s{font-size:8.3px;color:#a6a6a6;margin-top:2px;}
+.ficha{display:flex;gap:14px;align-items:center;border:1px solid #ece9e2;border-radius:14px;padding:11px 14px;margin-bottom:10px;background:#fdfdfc;}
+.fimg{width:150px;min-width:150px;height:110px;background:#ffffff;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px;}
+.fimg img{max-width:100%;max-height:100%;object-fit:contain;}
+.fbody{flex:1;}
+.fname{font-family:Poppins;font-size:8.4px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:#c99320;}
+.fsub{font-family:Poppins;font-size:12px;font-weight:600;color:#242424;margin:1px 0 5px;}
+table.ft{margin:0;}
+table.ft td{border-bottom:1px solid #f2f0eb;padding:2.5px 0;font-size:9px;}
+table.ft td:first-child{color:#9a9a9a;width:34%;padding-right:8px;}
+ol{margin:4px 0 10px 15px;padding:0;}
+ol li{font-size:9.6px;margin-bottom:5px;color:#4b4b4b;}
+.resume{border:1px solid #ece9e2;border-radius:14px;padding:13px 15px;margin-top:10px;background:#faf9f6;}
+.resume .t{font-family:Poppins;font-size:8.4px;letter-spacing:2px;text-transform:uppercase;color:#c99320;font-weight:600;margin-bottom:5px;}
+.two{display:flex;gap:16px;}
+.two>div{flex:1;}
+
+/* ---- overrides On Grid: pie sin numeración de página ---- */
+@page { @bottom-right { content:""; } @bottom-left { content:""; }
+  @bottom-center { content:"ORIENS ENERGÍA SOLAR  ·  " string(clientefoot); font-family:Lato; font-size:7.5px; color:#b9b9b9; letter-spacing:.3px; } }
+.cfoot{string-set:clientefoot content();position:absolute;visibility:hidden;height:0;}
+.lead{font-size:10.8px;line-height:1.62;}
+.blk{margin:0 0 9px;}
+.blk .bt{font-family:Poppins;font-size:10.2px;font-weight:600;color:#242424;margin:0 0 1px;}
+.blk .bd{font-size:9.7px;color:#575757;line-height:1.55;margin:0;}
+.gold{color:#c99320;font-weight:700;}
+.green{color:#4e9e3a;font-weight:700;}
+.box{border:1px solid #ece9e2;border-radius:14px;padding:13px 16px;margin:10px 0;background:#fdfdfc;}
+.box .bx-eyebrow{font-family:Poppins;font-size:8.2px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#c99320;margin:0 0 2px;}
+.box h3{font-family:Poppins;font-size:15px;font-weight:600;color:#242424;margin:0 0 1px;}
+.box .h3s{font-size:9.4px;color:#9a9a9a;font-style:italic;margin:0 0 7px;}
+table.res td{font-size:10px;padding:6px 7px;}
+table.res td:first-child{color:#8f8f8f;width:56%;}
+table.res td:last-child{text-align:right;font-weight:700;color:#242424;}
+table.res tr.big td:last-child{font-family:Poppins;font-size:12.5px;color:#c99320;}
+table.res tr.sub td{font-size:8.7px;color:#a6a6a6;padding-top:0;border-bottom:none;}
+table.res tr.sub td:last-child{font-weight:400;color:#a6a6a6;}
+ol.met{margin:2px 0 0 14px;}
+ol.met li{margin-bottom:6px;font-size:9.7px;line-height:1.55;}
+ol.met li b{color:#242424;}
+.lgd{display:flex;gap:14px;font-size:8.4px;color:#8f8f8f;margin:2px 0 0 2px;}
+.lgd i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:-1px;}
+.fin-h{font-family:Poppins;font-size:9px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#c99320;margin:13px 0 2px;}
+ul.notas{margin:4px 0 0 0;padding:0;list-style:none;}
+ul.notas li{font-size:9px;color:#6b6b6b;margin-bottom:3px;padding-left:10px;text-indent:-10px;}
+ul.notas li:before{content:"· ";color:#c99320;font-weight:700;}
+
+/* ---- compactado para que cada bloque entre en su hoja ---- */
+h1{margin:2px 0 3px;} .sub{margin:0 0 10px;} hr{margin:9px 0;}
+.lead{font-size:10.2px;line-height:1.5;}
+.lead p{margin:0 0 7px;}
+.box{padding:11px 14px;margin:8px 0;}
+table.comp td{padding:4px 7px;font-size:9.3px;}
+table.mes td{padding:3.6px 7px;font-size:9.3px;}
+ol.met li{margin-bottom:5px;font-size:9.5px;line-height:1.5;}

@@ -1,0 +1,482 @@
+{
+  "cliente": {
+    "nombre": "Diego Ortiz",
+    "ubicacion": "Brandsen, PBA",
+    "fecha": "18/09/2026"
+  },
+  "documento": {
+    "titulo": "Sistema solar OFF GRID",
+    "subtitulo": "Su energía, generada y almacenada en casa. Respaldo ante los cortes y margen para lo que viene.",
+    "eyebrow": "PROPUESTA · SISTEMA OFF GRID EN PARALELO A LA RED",
+    "intro": "Este sistema OFF GRID trabaja en paralelo al suministro de la red, sin inyectar excedente. La casa se alimenta con lo que el sol produce durante el día y con la energía almacenada en la batería para la noche y para los cortes de luz. Las dos alternativas comparten el mismo inversor y la misma batería —el respaldo ante los cortes es idéntico—: lo que cambia es la cantidad de paneles, es decir, cuánta energía propia genera la casa.",
+    "mostrar_recupero": false,
+    "nota_generacion": "Generación estimada con simulador propio para la ubicación, orientación e inclinación del proyecto.",
+    "mostrar_ahorro": false,
+    "mostrar_mes_a_mes": false,
+    "mostrar_futuro": false,
+    "mostrar_comparativa": false
+  },
+  "consumo": {
+    "distribuidora": "Cooperativa de Electrificación Rural de Brandsen Ltda.",
+    "tipo_usuario": "T1R · Residencial",
+    "periodo_analizado": "Sep 2025 – Ago 2026",
+    "meses_kwh": [
+      395,
+      305,
+      176,
+      190,
+      112,
+      94,
+      154,
+      109,
+      136,
+      182,
+      370,
+      266
+    ],
+    "tarifa": {
+      "modo": "bloque",
+      "tramos": [
+        {
+          "hasta": 151,
+          "precio_kwh": 173.6756,
+          "cargo_fijo": 5713.03
+        },
+        {
+          "hasta": 301,
+          "precio_kwh": 164.6226,
+          "cargo_fijo": 17772.54
+        },
+        {
+          "hasta": 326,
+          "precio_kwh": 164.6226,
+          "cargo_fijo": 20345.03
+        },
+        {
+          "hasta": 401,
+          "precio_kwh": 166.0471,
+          "cargo_fijo": 20345.03
+        },
+        {
+          "hasta": 451,
+          "precio_kwh": 174.2382,
+          "cargo_fijo": 24764.82
+        },
+        {
+          "hasta": 501,
+          "precio_kwh": 178.6354,
+          "cargo_fijo": 27978.38
+        },
+        {
+          "hasta": 601,
+          "precio_kwh": 191.6694,
+          "cargo_fijo": 41673.71
+        },
+        {
+          "hasta": 701,
+          "precio_kwh": 203.3537,
+          "cargo_fijo": 54722.23
+        },
+        {
+          "hasta": 1401,
+          "precio_kwh": 208.716,
+          "cargo_fijo": 74592.01
+        },
+        {
+          "hasta": null,
+          "precio_kwh": 209.8261,
+          "cargo_fijo": 88195.15
+        }
+      ],
+      "cargo_variable_kwh": 16.353,
+      "cargo_variable_nombre": "CTT",
+      "leyes_frac": 0.155,
+      "iva_frac": 0.21
+    }
+  },
+  "sistema": {
+    "panel_wp": 650,
+    "inversor_kw": 6.6,
+    "inversor_fv_max_w": 8000,
+    "generacion_base": {
+      "paneles": 6,
+      "mensual_kwh": [
+        665,
+        632,
+        564,
+        486,
+        407,
+        352,
+        381,
+        448,
+        544,
+        564,
+        626,
+        649
+      ]
+    }
+  },
+  "supuestos": {
+    "autoconsumo_dia_frac": 0.5,
+    "bateria_eficiencia": 0.9,
+    "reserva_bateria_kwh": 0,
+    "tc": 1535
+  },
+  "alternativas": [
+    {
+      "id": "A",
+      "nombre": "4 paneles",
+      "paneles": 4,
+      "resumen": "Cubre el consumo actual de la casa y da respaldo ante los cortes. El excedente alcanza para un uso moderado de consumos nuevos.",
+      "bateria_kwh": 5.12,
+      "bateria_util_kwh": 4.86,
+      "bateria_desc": "Pylontech UF5000 · 5 kWh",
+      "presupuesto_nro": "005-000204",
+      "items": [
+        [
+          "Paneles solares",
+          "Panel fotovoltaico Mono N-Type Bifacial Jinko Tiger Neo 650 Wp · Garantía 12 años",
+          "4"
+        ],
+        [
+          "Estructura",
+          "Kit de estructura coplanar de aluminio",
+          "1"
+        ],
+        [
+          "Inversor Off Grid",
+          "Deye SUN-6.6K-OG03LP1-EU-AM2 · 6,6 kW · IP65 · 2 MPPT",
+          "1"
+        ],
+        [
+          "Batería",
+          "Batería de litio Pylontech UF5000 · 5 kWh · Garantía 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+          "1"
+        ],
+        [
+          "Materiales eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "1"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "Bonificado"
+        ]
+      ],
+      "subtotal_usd": 4763.7,
+      "iva_usd": 911.2,
+      "total_usd": 5674.99,
+      "financiacion": [
+        [
+          "Contado",
+          "50% (USD 2.837)",
+          "USD 2.837",
+          "USD 5.675,0"
+        ],
+        [
+          "6 cuotas",
+          "40% (USD 2.270)",
+          "USD 584",
+          "USD 5.775,0"
+        ],
+        [
+          "12 cuotas",
+          "30% (USD 1.702)",
+          "USD 353",
+          "USD 5.937,9"
+        ],
+        [
+          "24 cuotas",
+          "20% (USD 1.135)",
+          "USD 218",
+          "USD 6.366,5"
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "nombre": "8 paneles",
+      "paneles": 8,
+      "resumen": "Mismo respaldo y misma cobertura del consumo actual, con el doble de energía propia disponible: el margen que hace falta para un auto eléctrico o nuevos equipos.",
+      "bateria_kwh": 5.12,
+      "bateria_util_kwh": 4.86,
+      "bateria_desc": "Pylontech UF5000 · 5 kWh",
+      "presupuesto_nro": "005-000207",
+      "items": [
+        [
+          "Paneles solares",
+          "Panel fotovoltaico Mono N-Type Bifacial Jinko Tiger Neo 650 Wp · Garantía 12 años",
+          "8"
+        ],
+        [
+          "Estructura",
+          "Kit de estructura coplanar de aluminio",
+          "2"
+        ],
+        [
+          "Inversor Off Grid",
+          "Deye SUN-6.6K-OG03LP1-EU-AM2 · 6,6 kW · IP65 · 2 MPPT",
+          "1"
+        ],
+        [
+          "Batería",
+          "Batería de litio Pylontech UF5000 · 5 kWh · Garantía 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+          "1"
+        ],
+        [
+          "Materiales eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "1"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "Bonificado"
+        ]
+      ],
+      "subtotal_usd": 5724.6,
+      "iva_usd": 1024.0,
+      "total_usd": 6748.51,
+      "financiacion": [
+        [
+          "Contado",
+          "50% (USD 3.374)",
+          "USD 3.374",
+          "USD 6.748,5"
+        ],
+        [
+          "6 cuotas",
+          "40% (USD 2.699)",
+          "USD 695",
+          "USD 6.867,4"
+        ],
+        [
+          "12 cuotas",
+          "30% (USD 2.025)",
+          "USD 420",
+          "USD 7.061,2"
+        ],
+        [
+          "24 cuotas",
+          "20% (USD 1.350)",
+          "USD 259",
+          "USD 7.570,8"
+        ]
+      ]
+    }
+  ],
+  "ampliacion": null,
+  "fichas": [
+    {
+      "img": "img_panel.png",
+      "cat": "PANEL FOTOVOLTAICO",
+      "name": "Panel solar — Jinko Tiger Neo 650 Wp",
+      "sub": "Mono N-Type · Bifacial doble vidrio",
+      "specs": [
+        [
+          "Potencia máxima",
+          "650 Wp"
+        ],
+        [
+          "Ganancia bifacial",
+          "hasta +27 %"
+        ],
+        [
+          "Eficiencia",
+          "22,5 %"
+        ],
+        [
+          "Tensión máx. sistema",
+          "1500 VDC"
+        ],
+        [
+          "Coef. temperatura (Pmax)",
+          "−0,30 %/°C"
+        ],
+        [
+          "Temp. de operación",
+          "−40 a +85 °C"
+        ],
+        [
+          "Garantía producto",
+          "12 años"
+        ],
+        [
+          "Garantía rendimiento",
+          "30 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_inversor_deye.png",
+      "cat": "INVERSOR OFF GRID",
+      "name": "Inversor Off Grid — Deye SUN-6.6K-OG03LP1-EU-AM2",
+      "sub": "Monofásico · Onda sinusoidal pura · Doble MPPT · IP65",
+      "specs": [
+        [
+          "Potencia nominal",
+          "6,6 kW"
+        ],
+        [
+          "Grado de protección",
+          "IP65"
+        ],
+        [
+          "Seguidores MPPT",
+          "2"
+        ],
+        [
+          "Potencia FV máxima",
+          "8.000 W"
+        ],
+        [
+          "Paralelizable",
+          "hasta 16 unidades"
+        ],
+        [
+          "Monitoreo",
+          "WiFi incluido"
+        ],
+        [
+          "Compatibilidad",
+          "litio y plomo-ácido"
+        ],
+        [
+          "Garantía",
+          "5 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_bateria_pylontech_uf5000.png",
+      "cat": "ALMACENAMIENTO",
+      "name": "Batería de litio — Pylontech UF5000",
+      "sub": "Litio Ferrofosfato (LiFePO4) · Modular y escalable",
+      "specs": [
+        [
+          "Química",
+          "LiFePO4"
+        ],
+        [
+          "Vida útil de diseño",
+          "hasta 15 años"
+        ],
+        [
+          "Capacidad nominal",
+          "5,12 kWh"
+        ],
+        [
+          "Corriente máx. descarga",
+          "100 A"
+        ],
+        [
+          "Configuración",
+          "51,2 V · 100 Ah"
+        ],
+        [
+          "Comunicación",
+          "CAN / RS485"
+        ],
+        [
+          "Capacidad útil",
+          "~4,86 kWh (95% DoD)"
+        ],
+        [
+          "Escalabilidad",
+          "hasta 20 módulos (~102 kWh)"
+        ],
+        [
+          "Ciclos de vida",
+          "+6.000 ciclos"
+        ],
+        [
+          "Garantía",
+          "10 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_estr_chapa.png",
+      "cat": "ESTRUCTURA",
+      "name": "Estructura coplanar de aluminio",
+      "sub": "Montaje sobre techo de chapa · 2 kits",
+      "specs": [
+        [
+          "Material",
+          "Aluminio anodizado"
+        ],
+        [
+          "Tornillería",
+          "Acero inoxidable"
+        ],
+        [
+          "Montaje",
+          "Coplanar al techo"
+        ],
+        [
+          "Vida útil",
+          "+25 años"
+        ]
+      ]
+    }
+  ],
+  "condiciones": [
+    [
+      "Llave en mano",
+      "Asesoramiento, ingeniería, flete, instalación y puesta en marcha. Antes del cierre se realiza un relevamiento técnico previo del sitio."
+    ],
+    [
+      "100% Oriens",
+      "Toda la cadena la ejecuta nuestro equipo, sin personas ni organizaciones subcontratadas."
+    ],
+    [
+      "Plazo de instalación",
+      "15 a 20 días corridos contados desde el pago del anticipo."
+    ],
+    [
+      "Garantías",
+      "Garantía internacional de los productos (paneles, inversor y batería) más garantía propia de instalación."
+    ],
+    [
+      "Normativa",
+      "Todas las instalaciones cumplen las normas IRAM de seguridad eléctrica."
+    ],
+    [
+      "Sin trámite de red",
+      "Al no inyectar excedente a la red, el sistema no requiere el alta como Usuario-Generador."
+    ]
+  ],
+  "respaldo": {
+    "motivo": "El cliente consulta por cortes de luz frecuentes pero breves: del orden de 20 minutos, y algunos días dos cortes cortos.",
+    "descarga_max_kw": 5.1,
+    "autonomia_ejemplo": "Con 4,86 kWh útiles, la batería sostiene unos 4 kW de consumo durante más de una hora: de sobra para cortes de 20 minutos, incluso repetidos en el mismo día.",
+    "esenciales": [
+      "Heladera y freezer",
+      "Iluminación general",
+      "Tomas de uso general, internet y WiFi",
+      "Bomba de agua",
+      "Un equipo de aire acondicionado"
+    ],
+    "diferibles": [
+      "Termotanque eléctrico",
+      "Horno y anafe eléctrico"
+    ],
+    "nota": "El tablero de cargas esenciales se define en el relevamiento técnico previo. El termotanque y el horno quedan fuera del respaldo por ser cargas de alta potencia y uso diferible: durante un corte de 20 minutos no se notan."
+  },
+  "futuro": {
+    "consumo_ev_kwh_100km": 17,
+    "texto": "El excedente diurno es la energía que los paneles pueden producir y que hoy la casa no llega a usar. Sin inyección a la red, esa energía sólo tiene valor si se consume en el momento: es exactamente el margen disponible para los equipos que sume más adelante — un auto eléctrico, climatización, una bomba o un taller.",
+    "condicion": "Para aprovechar ese margen, los consumos nuevos tienen que funcionar de día. Un auto eléctrico cargado de noche toma energía de la red igual que hoy; programado para cargar con sol, se alimenta del excedente sin tocar la factura."
+  }
+}

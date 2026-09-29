@@ -1,0 +1,196 @@
+{
+  "titulo": "Proyecto Energía Solar JG Envases",
+  "cliente": "JG Envases e Hijos S.A.",
+  "ubicacion": "Álvarez de Arenales 1505 · Morón · Buenos Aires",
+  "presupuesto": "001-000151",
+  "fecha": "Julio 2026",
+  "subtitulo": "Central fotovoltaica conectada a la red · autoconsumo industrial",
+  "sistema": {
+    "n_paneles": 122,
+    "panel_wp": 620,
+    "paneles_chapa": 80,
+    "paneles_plano": 42,
+    "inversor_marca": "Growatt",
+    "inversor_kw": 80,
+    "n_inversores": 1
+  },
+  "sistema_titulo": "Una central, dos tipos de montaje",
+  "sistema_texto": "La instalación combina dos soluciones de montaje según la cubierta: <b>80 paneles coplanares sobre la chapa</b> de los dos galpones principales y <b>42 paneles sobre el techo plano</b> con estructura triangular de aluminio y lastres de hormigón, <b>sin perforar losa ni membrana</b>. Todo alimenta un único inversor Growatt On Grid de 80 kW: la energía se genera y se consume en el momento, y el excedente menor que pueda sobrar se inyecta a la red.",
+  "nota_inversor": "<b>¿Por qué un inversor de 80 kW?</b> Con 75,64 kWp de paneles, un único Growatt MAX 80KTL3-LV cubre toda la instalación con un ratio DC/AC de 0,95 — dimensionamiento óptimo, sin recorte (curtailment) apreciable y con margen para operar los 7 seguidores MPPT a nivel de string.",
+  "componentes": [
+    [
+      1,
+      "Paneles",
+      "Jinko Solar Tiger Neo 620 Wp · Mono N-Type bifacial · garantía 12 años",
+      "122"
+    ],
+    [
+      2,
+      "Estructura coplanar",
+      "Kit de aluminio · 80 paneles sobre cubierta de chapa de los 2 galpones",
+      "16"
+    ],
+    [
+      3,
+      "Estructura techo plano",
+      "Triangular de aluminio con lastres de hormigón · sin perforar losa ni membrana · 42 paneles",
+      "1"
+    ],
+    [
+      4,
+      "Inversor",
+      "Growatt MAX 80KTL3-LV · On Grid trifásico 80 kW · IP65 · garantía 5 años",
+      "1"
+    ],
+    [
+      5,
+      "Monitoreo",
+      "Accesorio WiFi para monitoreo remoto",
+      "1"
+    ],
+    [
+      6,
+      "Limitador de inyección",
+      "Medidor de corriente trifásico hasta 600 A para inversores Growatt",
+      "1"
+    ],
+    [
+      7,
+      "Mano de obra",
+      "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+      "1"
+    ],
+    [
+      8,
+      "Materiales eléctricos",
+      "Cables, tableros, interruptores y ferretería normalizada",
+      "1"
+    ],
+    [
+      9,
+      "Flete",
+      "Transporte de equipos y personal",
+      "1"
+    ]
+  ],
+  "inversion_usd": 40053,
+  "iva": 0.21,
+  "consumo": {
+    "anual_kwh": 328848,
+    "mensual_kwh": {
+      "Ene": 26400,
+      "Feb": 22300,
+      "Mar": 26600,
+      "Abr": 29800,
+      "May": 33500,
+      "Jun": 27400,
+      "Jul": 27400,
+      "Ago": 27400,
+      "Sep": 27400,
+      "Oct": 27400,
+      "Nov": 25900,
+      "Dic": 25900
+    }
+  },
+  "nota_consumo": "Consumo: promedio del predio según datos de facturación disponibles (6 meses reales, resto estimado). Generación: simulación profesional.",
+  "generacion": {
+    "anual_kwh": 109928,
+    "mensual_kwh": {
+      "Ene": 15100,
+      "Feb": 12000,
+      "Mar": 10200,
+      "Abr": 6800,
+      "May": 4600,
+      "Jun": 3500,
+      "Jul": 4100,
+      "Ago": 5900,
+      "Sep": 8300,
+      "Oct": 11500,
+      "Nov": 13300,
+      "Dic": 14700
+    }
+  },
+  "economia": {
+    "costo_real_kwh_ars": 116.5,
+    "valor_inyeccion_ars": 70,
+    "autoconsumo": 0.9,
+    "tc": 1510,
+    "aumento_anual": 0.1,
+    "tope_usd_kwh": 0.18,
+    "degradacion": 0.005,
+    "mantenimiento": 0.01,
+    "factor_co2": 0.000351
+  },
+  "financiacion": [
+    [
+      "Contado fraccionado",
+      0.5,
+      0,
+      0.0
+    ],
+    [
+      "6 cuotas",
+      0.4,
+      6,
+      0.05
+    ],
+    [
+      "12 cuotas",
+      0.3,
+      12,
+      0.1
+    ],
+    [
+      "24 cuotas",
+      0.2,
+      24,
+      0.14
+    ],
+    [
+      "36 cuotas",
+      0.15,
+      36,
+      0.18
+    ]
+  ],
+  "fichas": [
+    {
+      "preset": "panel_jinko",
+      "wp": 620
+    },
+    {
+      "preset": "inversor_growatt",
+      "kw": 80
+    },
+    {
+      "preset": "estr_coplanar",
+      "paneles": 80
+    },
+    {
+      "preset": "estr_techo_plano",
+      "paneles": 42
+    }
+  ],
+  "condiciones": [
+    [
+      "Formas de pago",
+      "50% al firmar contrato y 50% luego de la instalación, sin interés. Alternativamente, financiación propia Oriens en cuotas en dólares."
+    ],
+    [
+      "Qué incluye",
+      "Central llave en mano: asesoramiento, ingeniería, flete, instalación y puesta en marcha."
+    ],
+    [
+      "Garantías",
+      "Garantía internacional de productos (Jinko, Growatt) más garantía de instalación Oriens."
+    ],
+    [
+      "Plazo",
+      "15 a 20 días corridos desde el pago del anticipo."
+    ],
+    [
+      "Inyección",
+      "Alta como Usuario-Generador según Ley 27.424; los tiempos dependen de la distribuidora."
+    ]
+  ]
+}

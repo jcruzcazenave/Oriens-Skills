@@ -1,0 +1,250 @@
+{
+  "titulo": "Central solar híbrida",
+  "subtitulo": "Análisis del escenario actual y propuestas comparativas",
+  "cliente": "Claudio Van Waarde",
+  "ubicacion": "Coronel Dorrego · Provincia de Buenos Aires",
+  "fecha": "3 de septiembre de 2026",
+  "factura": {
+    "distribuidora": "Cooperativa de Provisión de Electricidad de Coronel Dorrego Ltda.",
+    "tarifa": "T4 · Pequeña demanda"
+  },
+  "sistema_compartido": {
+    "n_paneles": 16,
+    "panel_wp": 620,
+    "kwp": 9.92,
+    "inversor_kw": 12
+  },
+  "consumo": {
+    "anual_kwh": 12019,
+    "mensual_kwh": {
+      "Ene": 630,
+      "Feb": 476,
+      "Mar": 485,
+      "Abr": 486,
+      "May": 446,
+      "Jun": 2828,
+      "Jul": 3056,
+      "Ago": 1220,
+      "Sep": 720,
+      "Oct": 509,
+      "Nov": 423,
+      "Dic": 740
+    }
+  },
+  "generacion": {
+    "anual_kwh": 14136,
+    "mensual_kwh": {
+      "Ene": 1488,
+      "Feb": 1414,
+      "Mar": 1261,
+      "Abr": 1088,
+      "May": 910,
+      "Jun": 788,
+      "Jul": 853,
+      "Ago": 1001,
+      "Sep": 1218,
+      "Oct": 1262,
+      "Nov": 1400,
+      "Dic": 1452
+    }
+  },
+  "metodologia": {
+    "orientacion": "al norte",
+    "inclinacion_deg": 15,
+    "rendimiento_kwh_kwp": 1425,
+    "perdidas_frac": 0.05,
+    "autoconsumo_dia_frac": 0.4,
+    "bateria_dod": 0.9,
+    "bateria_eficiencia": 0.96,
+    "mes_inicio_idx": 8,
+    "carga_respaldo_kw": 1.0
+  },
+  "economia": {
+    "costo_real_kwh": 433.8,
+    "valor_inyeccion_kwh": 147.4371,
+    "cargo_fijo_mensual": 64610.64145540001,
+    "tc": 1535,
+    "aumento_anual": 0.1,
+    "degradacion": 0.005,
+    "mantenimiento": 0.0,
+    "inversion_con_iva": true,
+    "anios_sin_inyeccion": 1
+  },
+  "texto_lectura_consumo": "<p>El suministro está categorizado como <b>T4 · Pequeña demanda</b> en la Cooperativa de Provisión de Electricidad de Coronel Dorrego. Sumando los doce meses facturados hasta julio de 2026, el consumo asciende a <b>12.019 kWh al año</b>. Considerando el cargo variable de energía más el cargo de transporte y los impuestos que se pagan en proporción al consumo —incluido el IVA, que en este caso no se computa como crédito fiscal—, cada kWh tiene un costo real de <b>$434 por kWh</b>. Ese es el valor que cada kWh autoconsumido permite evitar.</p><p>El perfil de consumo es fuertemente estacional, y de una forma poco habitual: entre septiembre y mayo el suministro se mueve en torno a los <b>420 a 740 kWh por mes</b>, mientras que en junio y julio de 2026 trepó a <b>2.828 y 3.056 kWh</b>. Son casi cinco veces el promedio de los demás meses, y más del doble de lo que registraron esos mismos meses en 2025. Todo el dimensionamiento parte de ese contraste: hay nueve meses con mucho excedente disponible y dos meses de demanda muy concentrada, que además coinciden con la menor radiación solar del año.</p>",
+  "intro_presupuestos": "Las dos propuestas son del mismo tipo —central híbrida con inyección del excedente a la red— y comparten el mismo arreglo solar (16 paneles · 9,92 kWp) y el mismo inversor híbrido de 12 kW. La única diferencia entre ellas es la capacidad de batería, que define cuánto del consumo nocturno se cubre con energía solar y cuántas horas de respaldo hay ante un corte de luz.",
+  "intro_comparativa": "Las dos alternativas generan lo mismo y se recuperan en plazos parecidos. Lo que cambia entre ellas es cuánta energía propia se usa de noche en lugar de volcarla a la red, y cuánto respaldo queda disponible ante un corte de luz. El primer año se muestra por separado porque, mientras se tramita el alta como Usuario-Generador, el excedente todavía no se remunera.",
+  "nota_comparativa": "<b>Sobre la diferencia entre las dos opciones.</b> El arreglo solar y el inversor son los mismos, así que las dos generan la misma energía. Lo único que cambia es qué proporción de esa energía se guarda para consumir de noche y qué proporción se vuelca a la red: la batería de 5 kWh almacena 1.313 kWh al año e inyecta 8.727, y la de 16 kWh almacena 3.351 e inyecta 6.689. En junio y julio la generación no alcanza a cubrir el consumo diurno, de modo que en esos dos meses no queda excedente disponible para cargar la batería y las dos alternativas se comportan igual.",
+  "metodologia_html": "<ol class=\"mlist\"><li><b>Cuánto genera el sistema.</b> Paneles al norte con 15° de inclinación, 1.425 kWh por kWp al año (ya descontado un 5% de pérdidas por suciedad, temperatura y conversión), con una degradación del 0,5% anual. Son <b>14.135 kWh/año</b> sobre los 9,92 kWp del arreglo, que cubren el <b>118%</b> del consumo anual. La distribución mes a mes sigue el perfil de radiación de Coronel Dorrego.</li><li><b>Cuánto vale cada kWh.</b> Lo que se autoconsume se valoriza al costo real de <span class=\"gold\">$434/kWh</span> —lo que se deja de pagar—, y el excedente que se inyecta a la red al 50% del cargo variable antes de impuestos, <span class=\"gold\">$147/kWh</span>. El kWh propio vale casi tres veces lo que el inyectado: por eso conviene consumir la energía en el lugar antes que volcarla.</li><li><b>El primer año todavía no se cobra el excedente.</b> El alta como Usuario-Generador ante la cooperativa demora, y hasta que esté vigente el excedente se vuelca a la red sin remuneración. Por eso el modelo toma <span class=\"gold\">el Año 1 con ahorro sólo por autoconsumo</span> y recién desde el Año 2 suma el crédito por inyección. Es un supuesto conservador: si el trámite sale antes, el recupero se acorta.</li><li><b>Cómo se reparte la energía, mes a mes.</b> A diferencia de un sistema sin batería, acá el cálculo no es anual sino mensual. En cada mes la generación cubre primero el consumo diurno (estimado en el 40% del consumo del mes); el excedente carga la batería hasta donde alcance el consumo nocturno y su capacidad ciclable; lo que sobra se inyecta. Lo que la generación no llega a cubrir se compra a la red. El crédito por inyección que no se usa en el mes se arrastra al siguiente: los nueve meses de excedente acumulan el saldo que absorbe junio y julio, cuando el sistema no llega a cubrir la demanda.</li><li><b>Cuándo se recupera.</b> La energía de red se actualiza por tarifa más inflación a un ritmo estimado del <span class=\"gold\">10% anual en dólares</span>, un escenario base prudente. La inversión se computa con IVA incluido, porque en este suministro el IVA no se recupera como crédito fiscal y por lo tanto el ahorro también se mide con impuestos. Contando el primer año sin inyección, la inversión se recupera en <span class=\"gold\">4 años 11 meses</span> (batería de 5 kWh) y <span class=\"gold\">5 años 1 mes</span> (batería de 16 kWh). Después quedan más de 15 años de ahorro neto, sobre una vida útil de unos 25 años.</li></ol>",
+  "notas_financiacion": [
+    "Los valores expresados incluyen IVA.",
+    "Financiación propia ORIENS Energía Solar, instrumentada mediante contrato de mutuo entre las partes y emisión de pagarés o e-cheqs electrónicos por cuota.",
+    "Financiación en USD oficiales Banco Nación; el tipo de cambio se toma al valor del día de cada pago.",
+    "Tipo de cambio de referencia de esta propuesta: $1.535 por dólar (BNA venta, 3 de septiembre de 2026).",
+    "El costo del trámite de alta como Usuario-Generador no está incluido en los montos de esta propuesta.",
+    "La TNA indicada corresponde al monto financiado de cada plan, una vez descontado el anticipo."
+  ],
+  "escenarios": [
+    {
+      "nombre": "Sistema híbrido · batería 5 kWh",
+      "nombre_corto": "Batería 5 kWh",
+      "resumen": "16 paneles · 9,92 kWp · Inversor híbrido Deye 12 kW · Pylontech UF5000",
+      "bateria_kwh": 5,
+      "bateria_label": "5 kWh · Pylontech UF5000",
+      "inversion_usd": 11245.1,
+      "inversion_usd_con_iva": 13083.84,
+      "componentes": [
+        [
+          "Paneles solares",
+          "Jinko Tiger Neo Mono N-Type Bifacial 620 Wp · garantía 12 años",
+          "16"
+        ],
+        [
+          "Estructura",
+          "Kit estructura coplanar de aluminio",
+          "4"
+        ],
+        [
+          "Inversor híbrido",
+          "Deye trifásico 12 kW · picos 20 kW · 2 MPPT · WiFi y limitador",
+          "1"
+        ],
+        [
+          "Batería",
+          "Litio Pylontech UF5000 · 5 kWh · 10 años de garantía",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, MO especializada y garantía",
+          "1"
+        ],
+        [
+          "Mat. eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "1"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "1"
+        ]
+      ],
+      "financiacion": [
+        [
+          "Contado",
+          "50% (USD 6.542)",
+          "USD 6.542",
+          "USD 13.084",
+          "—"
+        ],
+        [
+          "6 cuotas",
+          "40% (USD 5.234)",
+          "USD 1.347",
+          "USD 13.314",
+          "10 %"
+        ],
+        [
+          "12 cuotas",
+          "30% (USD 3.925)",
+          "USD 814",
+          "USD 13.690",
+          "12 %"
+        ],
+        [
+          "24 cuotas",
+          "20% (USD 2.617)",
+          "USD 503",
+          "USD 14.678",
+          "14 %"
+        ]
+      ],
+      "respaldo_kwh_utiles": 4,
+      "bateria_kwh_nominal": "5"
+    },
+    {
+      "nombre": "Sistema híbrido · batería 16 kWh",
+      "nombre_corto": "Batería 16 kWh",
+      "resumen": "16 paneles · 9,92 kWp · Inversor híbrido Deye 12 kW · Pylontech Fidus",
+      "bateria_kwh": 16.076,
+      "bateria_label": "16,1 kWh · Pylontech Fidus",
+      "inversion_usd": 13917.1,
+      "inversion_usd_con_iva": 16317.0,
+      "componentes": [
+        [
+          "Paneles solares",
+          "Jinko Tiger Neo Mono N-Type Bifacial 620 Wp · garantía 12 años",
+          "16"
+        ],
+        [
+          "Estructura",
+          "Kit estructura coplanar de aluminio",
+          "4"
+        ],
+        [
+          "Inversor híbrido",
+          "Deye trifásico 12 kW · picos 20 kW · 2 MPPT · WiFi y limitador",
+          "1"
+        ],
+        [
+          "Batería",
+          "Litio Pylontech Fidus · 16,076 kWh · IP65 · 8.000 ciclos · 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, MO especializada y garantía",
+          "1"
+        ],
+        [
+          "Mat. eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "1"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "1"
+        ]
+      ],
+      "financiacion": [
+        [
+          "Contado",
+          "50% (USD 8.158)",
+          "USD 8.158",
+          "USD 16.317",
+          "—"
+        ],
+        [
+          "6 cuotas",
+          "40% (USD 6.527)",
+          "USD 1.680",
+          "USD 16.605",
+          "10 %"
+        ],
+        [
+          "12 cuotas",
+          "30% (USD 4.895)",
+          "USD 1.015",
+          "USD 17.073",
+          "12 %"
+        ],
+        [
+          "24 cuotas",
+          "20% (USD 3.263)",
+          "USD 627",
+          "USD 18.305",
+          "14 %"
+        ]
+      ],
+      "respaldo_kwh_utiles": 10,
+      "bateria_kwh_nominal": "16,1"
+    }
+  ],
+  "proximos_pasos": [
+    "Confirmación de la alternativa elegida y firma del contrato con el anticipo acordado.",
+    "Relevamiento técnico del sitio: verificación de la superficie de montaje, orientación e inclinación definitivas y del tablero de conexión.",
+    "Provisión de equipos e instalación: 15 a 20 días corridos desde el pago del anticipo.",
+    "Puesta en marcha, configuración del inversor híbrido y del monitoreo, y entrega de la documentación de garantías."
+  ]
+}

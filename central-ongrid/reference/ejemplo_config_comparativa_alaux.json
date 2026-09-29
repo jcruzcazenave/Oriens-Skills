@@ -1,0 +1,396 @@
+{
+ "cliente": "Sergio Alaux · Servicios Integrales del Oeste",
+ "ubicacion": "Trenque Lauquen",
+ "provincia": "Provincia de Buenos Aires",
+ "fecha": "23 de septiembre de 2026",
+ "pie": "Propuesta On Grid · Sergio Alaux",
+ "tc": 1535,
+ "titulo": "Central solar fotovoltaica",
+ "subtitulo": "Análisis del escenario actual y propuesta de central On Grid con inyección · dos alternativas · escenario conservador",
+ "lectura_html": [
+  "El establecimiento es una gomería con servicio integral en Trenque Lauquen, abastecida por la Cooperativa Eléctrica local bajo tarifa T1G con bajada trifásica. Todo el consumo es eléctrico —compresor, elevador, herramientas e iluminación— y la actividad se concentra de 8 a 20 horas, en la franja en que produce el sol: se estima que el <b>70% del consumo es diurno</b>.",
+  "El suministro registró <b>2.025 kWh</b> en el último período de 31 días y suma <b>{consumo_anual} kWh</b> en los últimos doce meses. Los picos se dan en invierno, con cerca de 2.000 kWh en junio y julio, justo cuando el sol rinde menos. La estrategia es atacar el invierno con toda la generación disponible y compensar con la inyección de los excedentes de primavera y verano. Para una empresa Responsable Inscripta, cada kWh cuesta hoy <span class='gold'>$349 por kWh</span> entre energía, CTT y tributos proporcionales al consumo: es lo que la central deja de pagar por cada kWh que produce.",
+  "No hay necesidad de baterías, y eso es una ventaja económica: cada dólar invertido va a generar energía. El recurso sobra: dos techos de chapa sin sombras, de 14 × 8 m y de 10 × 22 m, con superficie de sobra para cualquiera de las dos alternativas y para futuras ampliaciones."
+ ],
+ "h_presupuestos": "Dos alternativas sobre el mismo inversor",
+ "consumo_mensual": [
+  1132,
+  1329,
+  618,
+  1064,
+  1713,
+  1989,
+  2025,
+  1406,
+  657,
+  798,
+  683,
+  947
+ ],
+ "frac_diurno": 0.7,
+ "costo_kwh": 349,
+ "precio_inyeccion": 125,
+ "factura_anual_ars": 6673000,
+ "base_repago": "sin_iva",
+ "escalada": 0.0,
+ "escalada_optimista": 0.1,
+ "degradacion": 0.005,
+ "anios_recupero": 12,
+ "aprovechamiento_diurno": 0.93,
+ "mantenimiento_usd_anual": 120,
+ "alternativas": [
+  {
+   "nombre": "Alternativa 1",
+   "tag": "Consumo actual",
+   "presupuesto_nro": "005-000220",
+   "paneles": 12,
+   "wp": 630,
+   "generacion_mensual": [
+    1290,
+    1226,
+    1093,
+    943,
+    788,
+    683,
+    739,
+    868,
+    1055,
+    1094,
+    1214,
+    1258
+   ],
+   "items": [
+    {
+     "item": "Paneles solares",
+     "desc": "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · garantía 12 años",
+     "cant": 12
+    },
+    {
+     "item": "Estructuras",
+     "desc": "Kit de estructura coplanar de aluminio para techo de chapa",
+     "cant": 3
+    },
+    {
+     "item": "Inversor On Grid",
+     "desc": "Inversor Growatt On Grid trifásico 15 kW · modelo MID15KTL3-X",
+     "cant": 1
+    },
+    {
+     "item": "Limitador de inyección",
+     "desc": "Medidor de corriente trifásico hasta 100 A, compatible con el inversor instalado",
+     "cant": 1
+    },
+    {
+     "item": "Mano de obra",
+     "desc": "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+     "cant": 1
+    },
+    {
+     "item": "Materiales eléctricos",
+     "desc": "Materiales eléctricos y de ferretería",
+     "cant": 1
+    },
+    {
+     "item": "Flete",
+     "desc": "Transporte de equipos y personas",
+     "cant": 1
+    }
+   ],
+   "subtotal_usd": 6493.0,
+   "iva": [
+    {
+     "pct": 21,
+     "monto": 1094.5
+    },
+    {
+     "pct": 10.5,
+     "monto": 218.5
+    }
+   ],
+   "total_usd": 7806.0,
+   "financiacion": [
+    {
+     "modalidad": "Contado",
+     "detalle": "50% adelanto · 50% post instalación",
+     "cuota": "USD 3.903",
+     "total": "USD 7.806"
+    },
+    {
+     "modalidad": "6 cuotas",
+     "detalle": "40% adelanto · 60% en 6 cuotas",
+     "cuota": "USD 804",
+     "total": "USD 7.944"
+    },
+    {
+     "modalidad": "12 cuotas",
+     "detalle": "30% adelanto · 70% en 12 cuotas",
+     "cuota": "USD 485",
+     "total": "USD 8.168"
+    },
+    {
+     "modalidad": "24 cuotas",
+     "detalle": "20% adelanto · 80% en 24 cuotas",
+     "cuota": "USD 300",
+     "total": "USD 8.757"
+    }
+   ]
+  },
+  {
+   "nombre": "Alternativa 2",
+   "tag": "Preparada para la ampliación",
+   "presupuesto_nro": "005-000221",
+   "paneles": 16,
+   "wp": 630,
+   "generacion_mensual": [
+    1719,
+    1634,
+    1457,
+    1257,
+    1051,
+    910,
+    986,
+    1157,
+    1407,
+    1459,
+    1618,
+    1677
+   ],
+   "items": [
+    {
+     "item": "Paneles solares",
+     "desc": "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · garantía 12 años",
+     "cant": 16
+    },
+    {
+     "item": "Estructuras",
+     "desc": "Kit de estructura coplanar de aluminio para techo de chapa",
+     "cant": 4
+    },
+    {
+     "item": "Inversor On Grid",
+     "desc": "Inversor Growatt On Grid trifásico 15 kW · modelo MID15KTL3-X",
+     "cant": 1
+    },
+    {
+     "item": "Limitador de inyección",
+     "desc": "Medidor de corriente trifásico hasta 100 A, compatible con el inversor instalado",
+     "cant": 1
+    },
+    {
+     "item": "Mano de obra",
+     "desc": "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+     "cant": 1
+    },
+    {
+     "item": "Materiales eléctricos",
+     "desc": "Materiales eléctricos y de ferretería",
+     "cant": 1
+    },
+    {
+     "item": "Flete",
+     "desc": "Transporte de equipos y personas",
+     "cant": 1
+    }
+   ],
+   "subtotal_usd": 7253.1,
+   "iva": [
+    {
+     "pct": 21,
+     "monto": 1108.4
+    },
+    {
+     "pct": 10.5,
+     "monto": 291.4
+    }
+   ],
+   "total_usd": 8652.9,
+   "financiacion": [
+    {
+     "modalidad": "Contado",
+     "detalle": "50% adelanto · 50% post instalación",
+     "cuota": "USD 4.326",
+     "total": "USD 8.653"
+    },
+    {
+     "modalidad": "6 cuotas",
+     "detalle": "40% adelanto · 60% en 6 cuotas",
+     "cuota": "USD 891",
+     "total": "USD 8.805"
+    },
+    {
+     "modalidad": "12 cuotas",
+     "detalle": "30% adelanto · 70% en 12 cuotas",
+     "cuota": "USD 538",
+     "total": "USD 9.054"
+    },
+    {
+     "modalidad": "24 cuotas",
+     "detalle": "20% adelanto · 80% en 24 cuotas",
+     "cuota": "USD 332",
+     "total": "USD 9.707"
+    }
+   ]
+  }
+ ],
+ "intro_resultados": "Los resultados se calculan bajo un <b>escenario deliberadamente conservador</b>: aprovechamiento diurno del 93%, excedente valorizado a la mitad del precio limpio de la energía, tarifa constante en dólares y mantenimiento anual descontado.",
+ "nota_resultados": "<b>Por qué el escenario es conservador.</b> No se asume ninguna suba real de la tarifa eléctrica, cuando la tendencia de los últimos años fue de aumentos sostenidos, y el excedente inyectado se valoriza a la mitad del precio de la energía. El repago informado es un piso: con una suba tarifaria del 10% anual en dólares, la inversión se recupera en {repopt1} en la Alternativa 1 y en {repopt2} en la Alternativa 2. Con una diferencia de {dif_sub_12} sin IVA, la Alternativa 2 genera un {dif_gen_12_pct}% más y se recupera antes. Además, se calcula con el consumo actual: con el departamento en el mismo suministro, su aprovechamiento mejora y el repago se acorta.",
+ "metodologia": [
+  {
+   "t": "Cuánto genera cada alternativa.",
+   "d": "La generación mensual surge del simulador de Oriens para módulos de 630 Wp: {gen1} kWh/año con 12 paneles y {gen2} kWh/año con 16. Se aplica una degradación de los módulos del 0,5% anual."
+  },
+  {
+   "t": "Cuánto vale cada kWh.",
+   "d": "Lo autoconsumido se valoriza a <span class='gold'>$349/kWh</span>: cargo variable de energía y CTT más los tributos que se pagan en proporción al consumo, sin IVA porque la empresa lo recupera. El kWh inyectado se reconoce a <b>$125/kWh</b>, el 50% del precio limpio de la energía, sin recargos ni impuestos."
+  },
+  {
+   "t": "Autoconsumo vs. inyección.",
+   "d": "Se considera un consumo 70% diurno y 30% nocturno. Mes a mes, la generación cubre primero el consumo diurno, con un aprovechamiento del 93% para contemplar los momentos en que la producción instantánea supera la demanda del taller. Lo que excede se inyecta a la red."
+  },
+  {
+   "t": "Cómo crece el ahorro.",
+   "d": "No se asume ninguna suba real de la tarifa: el ahorro se mantiene <span class='gold'>constante en dólares</span> y se descuentan USD 120 anuales de mantenimiento preventivo. Toda suba real de la energía de red acorta el recupero."
+  },
+  {
+   "t": "Cuándo se recupera.",
+   "d": "El repago se calcula sobre la inversión sin IVA, que la empresa recupera como crédito fiscal. El año en que el ahorro acumulado supera la inversión marca el recupero informado en la comparativa."
+  }
+ ],
+ "incluye": [
+  {
+   "t": "Central llave en mano",
+   "d": "Asesoramiento, ingeniería de proyecto, flete, instalación y puesta en marcha. No tercerizamos: el mismo equipo Oriens acompaña desde el relevamiento hasta el encendido."
+  },
+  {
+   "t": "Relevamiento técnico y coordinación con la obra",
+   "d": "Antes del cierre relevamos los dos techos de chapa para elegir el de mejor orientación y definir la disposición de los módulos. Como está prevista la construcción del departamento en la planta alta, coordinamos con la obra la ubicación de tableros y canalizaciones para evitar retrabajos."
+  },
+  {
+   "t": "Autoconsumo trifásico con monitoreo",
+   "d": "La central alimenta directamente compresor, elevador y herramientas durante el horario de trabajo, de 8 a 20. Incluye limitador de inyección trifásico y monitoreo remoto por WiFi para seguir generación y consumo en tiempo real."
+  },
+  {
+   "t": "Preparada para crecer",
+   "d": "Las dos alternativas usan el mismo inversor trifásico de 15 kW, que trabaja holgado con 12 o 16 paneles y admite sumar módulos más adelante sin reemplazar el equipo. La potencia de inyección se ajusta a la que habilite la Cooperativa."
+  },
+  {
+   "t": "Garantías y plazos",
+   "d": "Paneles con 12 años de garantía de producto y 30 años de rendimiento, inversor 5 años, más garantía propia de instalación de 1 año. Plazo de instalación de 15 a 20 días corridos desde el pago del anticipo. Normas IRAM y Ley 27.424."
+  }
+ ],
+ "nota_alternativas": "<b>Dos alternativas, dos momentos del proyecto.</b> La <b>Alternativa 1</b> (12 paneles) está dimensionada para el consumo actual de la gomería: cubre el {cob1}% del consumo anual y es la que mejor aprovecha cada kWh generado. La <b>Alternativa 2</b> (16 paneles) está pensada para la ampliación prevista: hoy genera más de lo que el establecimiento consume y el excedente se inyecta a la red con crédito en la factura; si el departamento de la planta alta queda en el mismo suministro, ese excedente pasa a autoconsumirse a valor pleno.",
+ "fichas": [
+  {
+   "img": "img_panel.png",
+   "tipo": "Panel solar",
+   "titulo": "Jinko Tiger Neo 630 Wp · bifacial N-type",
+   "specs": [
+    [
+     "Tecnología",
+     "N-type monocristalina TOPCon"
+    ],
+    [
+     "Potencia (Pmax)",
+     "630 Wp · hasta ~696 Wp bifacial"
+    ],
+    [
+     "Eficiencia",
+     "≈ 22,5 %"
+    ],
+    [
+     "Dimensiones / peso",
+     "2.382 × 1.134 × 30 mm · ~32 kg"
+    ],
+    [
+     "Garantía",
+     "12 años producto · 30 años lineal"
+    ],
+    [
+     "Cantidad",
+     "12 (Alt. 1) · 16 (Alt. 2)"
+    ]
+   ]
+  },
+  {
+   "img": "img_inversor.png",
+   "tipo": "Inversor",
+   "titulo": "Growatt MID15KTL3-X · On Grid trifásico",
+   "specs": [
+    [
+     "Potencia nominal",
+     "15.000 W"
+    ],
+    [
+     "Tipo",
+     "On Grid trifásico"
+    ],
+    [
+     "MPPT",
+     "2 seguidores independientes"
+    ],
+    [
+     "Monitoreo",
+     "WiFi · app Growatt"
+    ],
+    [
+     "Grado de protección",
+     "IP65"
+    ],
+    [
+     "Garantía",
+     "5 años"
+    ]
+   ]
+  },
+  {
+   "img": "img_estr_chapa.png",
+   "tipo": "Estructura · cubierta de chapa",
+   "titulo": "Kit coplanar de aluminio",
+   "specs": [
+    [
+     "Material",
+     "Aluminio anodizado · tornillería inoxidable"
+    ],
+    [
+     "Montaje",
+     "Coplanar sobre cubierta de chapa"
+    ],
+    [
+     "Ventajas",
+     "Baja carga de viento · sin lastre · anticorrosión"
+    ],
+    [
+     "Cantidad",
+     "3 kits (Alt. 1) · 4 kits (Alt. 2)"
+    ]
+   ]
+  }
+ ],
+ "nota_fichas": "El sistema se completa con un <b>limitador de inyección</b> (medidor de corriente trifásico hasta 100 A, compatible con el inversor instalado), materiales eléctricos y de ferretería, y la mano de obra especializada de Oriens.",
+ "mostrar_tabla_recupero": false,
+ "notas_financiacion": [
+  "Los valores expresados incluyen IVA.",
+  "Financiación propia ORIENS Energía Solar, instrumentada mediante contrato de mutuo entre las partes y emisión de pagarés o e-cheqs electrónicos por cuota.",
+  "Financiación en USD oficiales Banco Nación; el tipo de cambio se toma al valor del día de cada pago.",
+  "Tipo de cambio de referencia de esta propuesta: $1.535 por dólar (BNA venta, 23 de septiembre de 2026)."
+ ],
+ "pasos": [
+  {
+   "t": "Visita técnica previa",
+   "d": "Relevamos en el lugar los dos techos de chapa para elegir el de mejor orientación y verificar el estado de la cubierta. Definimos la disposición de los módulos, el recorrido de las canalizaciones, la ubicación del inversor y el punto de conexión al tablero trifásico. Coordinamos con la obra del departamento de la planta alta para dejar todo previsto."
+  },
+  {
+   "t": "Elección de la alternativa y firma",
+   "d": "Con el relevamiento cerrado se confirma la alternativa y la modalidad de pago, y se firma el contrato con el anticipo correspondiente."
+  },
+  {
+   "t": "Provisión e instalación",
+   "d": "Instalación de 15 a 20 días corridos desde el pago del anticipo, con personal propio de Oriens y conforme a normas IRAM."
+  },
+  {
+   "t": "Puesta en marcha y monitoreo",
+   "d": "Encendido de la central, configuración del limitador de inyección y del monitoreo remoto por WiFi, y entrega de la app para seguir generación y consumo en tiempo real."
+  }
+ ],
+ "resumen_html": "<b>En resumen.</b> Dos alternativas sobre el mismo inversor Growatt de 15 kW: <b>12 paneles</b> por {tot1} con IVA, con repago de {rep1}, dimensionada para el consumo actual; y <b>16 paneles</b> por {tot2} con IVA, con repago de {rep2}, preparada para la ampliación. El siguiente paso es coordinar la visita técnica para definir la ubicación de los paneles y los detalles de la instalación."
+}

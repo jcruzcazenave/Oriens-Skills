@@ -1,0 +1,500 @@
+{
+  "_nota": "DATOS DE EJEMPLO para probar el builder: consumo, tarifa y precios son ficticios. Caso tipo: campo con casa, casa del puestero y taller, EPE monofásico.",
+  "cliente": {
+    "nombre": "Cliente Demo",
+    "ubicacion": "",
+    "fecha": "23/09/2026"
+  },
+  "documento": {
+    "titulo": "Central solar off grid o híbrida",
+    "subtitulo": "Energía propia para la casa, la casa del puestero y el taller. Con respaldo ante los cortes.",
+    "eyebrow": "PROPUESTA · CENTRAL MONOFÁSICA OFF GRID / HÍBRIDA",
+    "intro": "Proponemos tres alternativas sobre la misma bajada monofásica. Las dos primeras son off grid: trabajan en paralelo a la red, sin inyectar, y no requieren trámite ante la distribuidora; comparten paneles e inversores y sólo cambia la batería, de 5 o de 16 kWh. La tercera es híbrida, con la batería de 16 kWh y más paneles: además de alimentar la casa y cargar la batería, inyecta el excedente a la red y lo convierte en crédito.",
+    "mostrar_recupero": true,
+    "mostrar_ahorro": true,
+    "mostrar_mes_a_mes": true,
+    "mostrar_modos": true,
+    "nota_generacion": "Generación estimada con simulador propio para la ubicación, orientación e inclinación del proyecto."
+  },
+  "consumo": {
+    "distribuidora": "EPE",
+    "tipo_usuario": "Residencial",
+    "periodo_analizado": "Sep 2025 – Ago 2026",
+    "meses_kwh": [
+      700,
+      650,
+      520,
+      420,
+      450,
+      620,
+      680,
+      600,
+      460,
+      420,
+      500,
+      660
+    ],
+    "tarifa": {
+      "modo": "plano",
+      "precio_kwh": 180.0,
+      "cargo_fijo": 12000.0,
+      "cargo_variable_kwh": 0.0,
+      "leyes_frac": 0.06,
+      "iva_frac": 0.21,
+      "fijos_exentos": 0.0
+    }
+  },
+  "sistema": {
+    "panel_wp": 630,
+    "limite_mono_kwp": 10,
+    "generacion_base": {
+      "paneles": 12,
+      "mensual_kwh": [
+        1200,
+        1032,
+        960,
+        768,
+        648,
+        540,
+        600,
+        768,
+        888,
+        1056,
+        1140,
+        1236
+      ]
+    }
+  },
+  "supuestos": {
+    "autoconsumo_dia_frac": 0.5,
+    "bateria_eficiencia": 0.9,
+    "reserva_bateria_kwh": 0,
+    "tc": 1450,
+    "mes_inicio_idx": 8,
+    "anios_sin_inyeccion": 1,
+    "aumento_anual_usd": 0.1,
+    "degradacion": 0.005,
+    "horizonte_anios": 25
+  },
+  "cargas": [
+    {
+      "nombre": "Heladeras e iluminación de las dos casas",
+      "potencia_w": 800,
+      "circuito": "respaldo"
+    },
+    {
+      "nombre": "Tomas generales, TV e internet",
+      "potencia_w": 500,
+      "circuito": "respaldo"
+    },
+    {
+      "nombre": "Lavarropas",
+      "potencia_w": 500,
+      "circuito": "respaldo"
+    },
+    {
+      "nombre": "Un aire acondicionado",
+      "potencia_w": 1100,
+      "circuito": "respaldo"
+    },
+    {
+      "nombre": "Los otros dos aires acondicionados",
+      "potencia_w": 2200,
+      "circuito": "red"
+    },
+    {
+      "nombre": "Cocina eléctrica",
+      "potencia_w": 6000,
+      "circuito": "red"
+    },
+    {
+      "nombre": "Taller: soldadora y amoladora",
+      "potencia_w": 6000,
+      "circuito": "red"
+    }
+  ],
+  "respaldo": {
+    "motivo": "En el campo los cortes de luz son parte de la rutina. Con batería, cuando se corta el suministro el sistema toma el relevo en forma automática y el circuito respaldado sigue funcionando.",
+    "autonomia_ejemplo": "Con las heladeras, la iluminación y un aire encendidos, una batería de 5 kWh sostiene varias horas de corte.",
+    "descarga_max_kw": 5.1,
+    "nota": "La soldadora, la amoladora y la cocina eléctrica tienen picos de arranque que superan lo que conviene exigirle al inversor en un corte: quedan conectadas directo a la red y funcionan normal mientras haya suministro. Con red, igual aprovechan la energía solar."
+  },
+  "alternativas": [
+    {
+      "id": "A",
+      "nombre": "Off grid · 5 kWh",
+      "modo": "off_grid",
+      "paneles": 12,
+      "inversor_kw": 13.2,
+      "inversor_desc": "2 × Deye off grid 6,6 kW",
+      "bateria_kwh": 5.12,
+      "bateria_util_kwh": 4.86,
+      "bateria_desc": "Pylontech UF5000 · 5 kWh",
+      "resumen": "Sin trámite ante la distribuidora. Reduce la factura con el consumo diurno y la batería de 5 kWh, y da respaldo ante los cortes.",
+      "presupuesto_nro": "005-000232",
+      "items": [
+        [
+          "Paneles solares",
+          "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · Garantía 12 años",
+          "12"
+        ],
+        [
+          "Estructura",
+          "Kit de estructura inclinable de aluminio para chapa o losa",
+          "3"
+        ],
+        [
+          "Inversor off grid",
+          "Inversor off grid Deye 6,6 kW · IP65 · 2 MPPT · hasta 16 en paralelo · WiFi · SUN-6.6K-OG03LP1-EU-AM2",
+          "2"
+        ],
+        [
+          "Batería",
+          "Batería de litio Pylontech UF5000 · 5 kWh · Garantía 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+          "1"
+        ],
+        [
+          "Materiales eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "2"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "1"
+        ]
+      ],
+      "subtotal_usd": 9035.8,
+      "iva_usd": 1679.0,
+      "total_usd": 10714.8,
+      "financiacion": [
+        [
+          "Contado · 50% anticipo",
+          "5.357",
+          "USD 5.357",
+          "USD 10.714,77"
+        ],
+        [
+          "6 cuotas · 40% anticipo",
+          "4.286",
+          "USD 1.103",
+          "USD 10.903,57"
+        ],
+        [
+          "12 cuotas · 30% anticipo",
+          "3.214",
+          "USD 666",
+          "USD 11.211,18"
+        ],
+        [
+          "24 cuotas · 20% anticipo",
+          "2.143",
+          "USD 412",
+          "USD 12.020,33"
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "nombre": "Off grid · 16 kWh",
+      "modo": "off_grid",
+      "paneles": 12,
+      "inversor_kw": 13.2,
+      "inversor_desc": "2 × Deye off grid 6,6 kW",
+      "bateria_kwh": 16.08,
+      "bateria_util_kwh": 14.5,
+      "bateria_desc": "Pylontech Fidus · 16 kWh",
+      "resumen": "Misma instalación que la A con una batería de 16 kWh: más consumo nocturno cubierto y más horas de respaldo. Sin trámite.",
+      "presupuesto_nro": "005-000233",
+      "items": [
+        [
+          "Paneles solares",
+          "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · Garantía 12 años",
+          "12"
+        ],
+        [
+          "Estructura",
+          "Kit de estructura inclinable de aluminio para chapa o losa",
+          "3"
+        ],
+        [
+          "Inversor off grid",
+          "Inversor off grid Deye 6,6 kW · IP65 · 2 MPPT · hasta 16 en paralelo · WiFi · SUN-6.6K-OG03LP1-EU-AM2",
+          "2"
+        ],
+        [
+          "Batería",
+          "Batería de litio Pylontech FIDUS · 16.076 Wh · IP65 · 8.000 ciclos · Garantía 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+          "1"
+        ],
+        [
+          "Materiales eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "2"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "1"
+        ]
+      ],
+      "subtotal_usd": 11707.8,
+      "iva_usd": 2240.1,
+      "total_usd": 13947.9,
+      "financiacion": [
+        [
+          "Contado · 50% anticipo",
+          "6.974",
+          "USD 6.974",
+          "USD 13.947,93"
+        ],
+        [
+          "6 cuotas · 40% anticipo",
+          "5.579",
+          "USD 1.436",
+          "USD 14.193,71"
+        ],
+        [
+          "12 cuotas · 30% anticipo",
+          "4.184",
+          "USD 867",
+          "USD 14.594,13"
+        ],
+        [
+          "24 cuotas · 20% anticipo",
+          "2.790",
+          "USD 536",
+          "USD 15.647,45"
+        ]
+      ]
+    },
+    {
+      "id": "C",
+      "nombre": "Híbrida · 16 kWh",
+      "modo": "hibrido",
+      "paneles": 16,
+      "inversor_kw": 8,
+      "inversor_pico_kw": 12,
+      "inversor_desc": "Deye híbrido 8 kW",
+      "bateria_kwh": 16.08,
+      "bateria_util_kwh": 14.5,
+      "bateria_desc": "Pylontech Fidus · 16 kWh",
+      "resumen": "La batería de 16 kWh con inversor híbrido y 16 paneles: lo que la casa no usa se inyecta y descuenta de la factura una vez aprobada el alta.",
+      "presupuesto_nro": "005-000234",
+      "items": [
+        [
+          "Paneles solares",
+          "Panel fotovoltaico Mono N-Type Bifacial Jinko Solar Tiger Neo 630 Wp · Garantía 12 años",
+          "16"
+        ],
+        [
+          "Estructura",
+          "Kit de estructura inclinable de aluminio para chapa o losa",
+          "4"
+        ],
+        [
+          "Inversor híbrido",
+          "Inversor híbrido monofásico Deye 8 kW · picos de hasta 12.000 W · 2 MPPT · WiFi y limitador incluido",
+          "1"
+        ],
+        [
+          "Batería",
+          "Batería de litio Pylontech FIDUS · 16.076 Wh · IP65 · 8.000 ciclos · Garantía 10 años",
+          "1"
+        ],
+        [
+          "Mano de obra",
+          "Ingeniería, puesta en marcha, mano de obra especializada y garantía",
+          "1"
+        ],
+        [
+          "Materiales eléctricos",
+          "Materiales eléctricos y de ferretería",
+          "1"
+        ],
+        [
+          "Flete",
+          "Transporte de equipos y personas",
+          "1"
+        ]
+      ],
+      "subtotal_usd": 12777.5,
+      "iva_usd": 2391.9,
+      "total_usd": 15169.4,
+      "financiacion": [
+        [
+          "Contado · 50% anticipo",
+          "7.585",
+          "USD 7.585",
+          "USD 15.169,36"
+        ],
+        [
+          "6 cuotas · 40% anticipo",
+          "6.068",
+          "USD 1.561",
+          "USD 15.436,66"
+        ],
+        [
+          "12 cuotas · 30% anticipo",
+          "4.551",
+          "USD 943",
+          "USD 15.872,16"
+        ],
+        [
+          "24 cuotas · 20% anticipo",
+          "3.034",
+          "USD 583",
+          "USD 17.017,71"
+        ]
+      ]
+    }
+  ],
+  "fichas": [
+    {
+      "img": "img_panel.png",
+      "cat": "PANEL FOTOVOLTAICO",
+      "name": "Panel solar — Jinko Tiger Neo 630 Wp",
+      "sub": "Mono N-Type · Bifacial doble vidrio",
+      "specs": [
+        [
+          "Potencia máxima",
+          "630 Wp"
+        ],
+        [
+          "Garantía producto",
+          "12 años"
+        ],
+        [
+          "Garantía rendimiento",
+          "30 años"
+        ],
+        [
+          "Tecnología",
+          "N-Type bifacial"
+        ]
+      ]
+    },
+    {
+      "img": "img_inversor_deye.png",
+      "cat": "INVERSOR OFF GRID",
+      "name": "Inversor off grid — Deye SUN-6.6K-OG03LP1-EU-AM2",
+      "sub": "Monofásico · Onda sinusoidal pura · Doble MPPT · IP65",
+      "specs": [
+        [
+          "Potencia nominal",
+          "6,6 kW por equipo"
+        ],
+        [
+          "Configuración",
+          "2 equipos en paralelo"
+        ],
+        [
+          "Seguidores MPPT",
+          "2"
+        ],
+        [
+          "Paralelizable",
+          "hasta 16 unidades"
+        ],
+        [
+          "Monitoreo",
+          "WiFi incluido"
+        ],
+        [
+          "Garantía",
+          "5 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_inversor_deye.png",
+      "cat": "INVERSOR HÍBRIDO",
+      "name": "Inversor híbrido — Deye monofásico 8 kW",
+      "sub": "Monofásico · Doble MPPT · Limitador de inyección",
+      "specs": [
+        [
+          "Potencia nominal",
+          "8 kW"
+        ],
+        [
+          "Picos",
+          "hasta 12.000 W"
+        ],
+        [
+          "Seguidores MPPT",
+          "2"
+        ],
+        [
+          "Limitador",
+          "incluido"
+        ],
+        [
+          "Monitoreo",
+          "WiFi incluido"
+        ],
+        [
+          "Garantía",
+          "5 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_bateria_pylontech_uf5000.png",
+      "cat": "ALMACENAMIENTO",
+      "name": "Batería de litio — Pylontech UF5000",
+      "sub": "LiFePO4 · Modular y escalable",
+      "specs": [
+        [
+          "Capacidad nominal",
+          "5,12 kWh"
+        ],
+        [
+          "Corriente máx. descarga",
+          "100 A"
+        ],
+        [
+          "Química",
+          "LiFePO4"
+        ],
+        [
+          "Garantía",
+          "10 años"
+        ]
+      ]
+    },
+    {
+      "img": "img_bateria_pylontech_fidus.png",
+      "cat": "ALMACENAMIENTO",
+      "name": "Batería de litio — Pylontech Fidus",
+      "sub": "LiFePO4 · Gabinete de alta capacidad",
+      "specs": [
+        [
+          "Capacidad nominal",
+          "16.076 Wh"
+        ],
+        [
+          "Ciclos de vida",
+          "8.000"
+        ],
+        [
+          "Protección",
+          "IP65"
+        ],
+        [
+          "Garantía",
+          "10 años"
+        ]
+      ]
+    }
+  ]
+}

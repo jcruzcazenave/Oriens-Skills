@@ -1,0 +1,111 @@
+{
+  "titulo": "Proyecto Energía Solar Híbrida Tallarico",
+  "cliente": "Tallarico Pablo Maximiliano",
+  "ubicacion": "Ruta Prov. N°20 105 · Ranchos · Buenos Aires",
+  "presupuesto": "S/N",
+  "fecha": "Julio 2026",
+  "subtitulo": "Central fotovoltaica híbrida con batería · autoconsumo residencial",
+  "sistema": {
+    "n_paneles": 30,
+    "panel_wp": 620,
+    "paneles_chapa": 30,
+    "paneles_plano": 0,
+    "inversor_marca": "Deye",
+    "inversor_kw": 15,
+    "n_inversores": 1
+  },
+  "sistema_titulo": "Central híbrida con respaldo de batería",
+  "sistema_texto": "La instalación combina <b>30 paneles coplanares sobre chapa</b>, un <b>inversor híbrido Deye de 15 kW</b> y una <b>batería Deye SE-F16-L de 16 kWh</b> de respaldo. Durante el día el sistema alimenta el consumo del hogar y carga la batería; por la noche o en horas sin generación, la batería cubre el consumo antes de recurrir a la red. El excedente que no se autoconsume ni se almacena se inyecta a la red mediante medición bidireccional.",
+  "nota_inversor": "<b>¿Por qué un inversor híbrido de 15 kW?</b> Con 18,6 kWp de paneles, el Deye SUN-15K-SG05LP3-EU-SM2 permite operar en modo híbrido (con batería) y on-grid, priorizando autoconsumo y carga de batería antes de comprar o inyectar a la red.",
+  "nombre_lugar": "del hogar",
+  "texto_intro": "El hogar de la familia Tallarico consume alrededor de <b>24.923 kWh por año</b> (≈ 2.077 kWh por mes en promedio, según la factura real de los últimos meses), con picos marcados en invierno por la losa radiante eléctrica. El cargo variable de energía —antes de cargo fijo e impuestos— es de <b>$150,58/kWh</b> hasta 1.400 kWh mensuales y de <b>$247,73/kWh</b> por encima de ese umbral, más un cargo por transición tarifaria (CTT) aparte de $6,07 o $14,28/kWh según el tramo. Sumando cargo fijo, recargos provinciales, tasa municipal e IVA —que en una vivienda particular no se recupera—, el costo real ronda los <b>$346,9 por kWh</b> en promedio ponderado anual (detalle abajo). Proponemos una central solar híbrida con batería que genere y almacene energía durante el día para cubrir el consumo del hogar y reducir la compra a la red.",
+  "desglose_tarifa_html": "<table style=\"margin-top:6px;\"><thead><tr><th>Estructura tarifaria de la cooperativa (Ranchos)</th><th class=\"r\">Hasta 1.400 kWh/mes</th><th class=\"r\">Más de 1.400 kWh/mes</th></tr></thead><tbody><tr><td class=\"b\">Cargo variable de energía</td><td class=\"r\">$150,58/kWh</td><td class=\"r\">$247,73/kWh</td></tr><tr><td class=\"b\">CTT (cargo transición tarifaria)</td><td class=\"r\">$6,07/kWh</td><td class=\"r\">$14,28/kWh</td></tr><tr><td class=\"b\">Subtotal precio de la energía</td><td class=\"r\">$156,65/kWh</td><td class=\"r\">$262,01/kWh</td></tr><tr><td class=\"b\">Cargo fijo mensual</td><td class=\"r\">$24.135</td><td class=\"r\">$29.471</td></tr></tbody></table><table style=\"margin-top:4px;\"><thead><tr><th>Recargos y tasas (se aplican en ambos tramos)</th><th class=\"r\"></th></tr></thead><tbody><tr><td class=\"b\">Leyes provinciales (Ley 7290, Ley 11769)</td><td class=\"r\">+15,5%</td></tr><tr><td class=\"b\">Tasa municipal (alumbrado público)</td><td class=\"r\">$13.208/mes fijo</td></tr><tr><td class=\"b\">IVA</td><td class=\"r\">+21% · no recuperable (vivienda particular)</td></tr><tr class=\"total\"><td>Costo real promedio ponderado (todo incluido)</td><td class=\"r\">$341,2/kWh</td></tr></tbody></table><div class=\"cap-s\" style=\"margin-top:4px;\">Cargo variable, CTT y cargo fijo validados contra la factura real de Tallarico (mayo 2026, tramo alto) y la de un vecino con consumo bajo el umbral (mismo período). Leyes, tasa municipal e IVA verificados en ambas facturas.</div>",
+  "nota_financiacion": "Se calcula sobre el total con IVA incluido: <b>USD 17.431 + IVA 16% = USD 20.203</b>. En una vivienda particular el IVA <b>no se recupera</b> — es parte del costo real de la inversión, no un adelanto financiero. Financiación propia de Oriens, en dólares oficiales Banco Nación; el contado fraccionado no tiene interés.",
+  "componentes": [
+    [1, "Paneles Solares", "Jinko JKM620N-66HL4M-(V) · 620 Wp", "30"],
+    [2, "Estructura coplanar", "Chiko Solar CHIKOCOPLANAR2.4V2 · sobre chapa", "8"],
+    [3, "Inversor Híbrido", "Deye SUN-15K-SG05LP3-EU-SM2 · trifásico 15 kW", "1"],
+    [4, "Batería", "Deye SE-F16-L · baja tensión · 16 kWh", "1"],
+    [5, "Mano de obra", "Instalación residencial (4 días)", "1"],
+    [6, "Materiales eléctricos", "Kit híbrido trifásico 20kW · 3 STR", "1"],
+    [7, "Gestión medidor bidireccional", "Trámite de inyección ante la cooperativa", "1"]
+  ],
+  "inversion_usd": 17431,
+  "iva": 0.159,
+  "consumo": {
+    "anual_kwh": 24923,
+    "mensual_kwh": {
+      "Ene": 1132, "Feb": 806, "Mar": 711, "Abr": 566, "May": 511,
+      "Jun": 5242, "Jul": 5200, "Ago": 4800,
+      "Sep": 1800, "Oct": 900, "Nov": 1335, "Dic": 1920
+    }
+  },
+  "nota_consumo": "Consumo real de la factura de la cooperativa (nov-25 a jun-26). Jul-ago-26 estimados sosteniendo el pico de invierno de junio (losa radiante); sep-oct-26 estimados con caída rápida simétrica a la subida abr→jun; nov-dic-26 estimados igual a nov-dic-25 (mismo patrón estacional).",
+  "generacion": {
+    "anual_kwh": 27126,
+    "mensual_kwh": {
+      "Ene": 2856, "Feb": 2714, "Mar": 2419, "Abr": 2087, "May": 1746,
+      "Jun": 1512, "Jul": 1637, "Ago": 1922,
+      "Sep": 2337, "Oct": 2423, "Nov": 2687, "Dic": 2786
+    }
+  },
+  "nota_autoconsumo": "<b>Autoconsumo estimado: ~49% de lo generado.</b> El sistema genera más energía en el año (27.126 kWh) que la que consume el hogar (24.923 kWh) — pero de forma desalineada: en invierno (jun-jul-ago), cuando más se consume por la losa radiante, es también cuando <b>menos genera el sistema</b> (menor irradiancia). La batería de 16 kWh amortigua parte de ese desajuste diario, pero no alcanza a cubrir todo el déficit de esos meses. El resto del año, con bajo consumo y alta generación, gran parte de la energía se inyecta a la red. Es un modelo mes a mes, no un promedio anual.",
+  "economia": {
+    "modo": "mensual_escalonado",
+    "tarifas": {"limite_kwh": 1400, "precio_bajo": 156.65, "precio_alto": 262.01, "cargo_fijo_bajo": 24135, "cargo_fijo_alto": 29471},
+    "bateria_kwh_mes": 480,
+    "bateria_eficiencia": 0.85,
+    "autoconsumo_directo_frac": 0.5,
+    "valor_inyeccion_ars": 80,
+    "leyes_frac": 0.155,
+    "iva_frac_energia": 0.21,
+    "tasa_municipal_ars": 13208,
+    "tc": 1500,
+    "aumento_anual": 0.10,
+    "tope_usd_kwh": 0.18,
+    "degradacion": 0.004,
+    "mantenimiento": 0.01,
+    "factor_co2": 0.000351
+  },
+  "financiacion": [
+    ["Contado fraccionado", 0.5, 0, 0.0],
+    ["6 cuotas", 0.4, 6, 0.05],
+    ["12 cuotas", 0.3, 12, 0.10],
+    ["24 cuotas", 0.2, 24, 0.14]
+  ],
+  "fichas": [
+    {"preset": "panel_jinko", "wp": 620},
+    {
+      "img": "img_inversor_deye.png",
+      "name": "Inversor",
+      "sub": "Deye SUN-15K-SG05LP3-EU-SM2 · Híbrido trifásico",
+      "specs": [
+        ["Potencia AC", "15 kW · trifásico"],
+        ["Modo de operación", "Híbrido (con batería) y On-Grid"],
+        ["Compatibilidad batería", "Baterías Deye de baja tensión (48V), ej. SE-F16-L"],
+        ["Monitoreo", "WiFi / app Deye"],
+        ["Garantía", "5 años"]
+      ]
+    },
+    {
+      "img": "img_bateria_deye.png",
+      "name": "Batería",
+      "sub": "Deye SE-F16-L · baja tensión · 16 kWh",
+      "specs": [
+        ["Capacidad", "16 kWh"],
+        ["Tensión", "Baja tensión (48V)"],
+        ["Química", "LiFePO4"],
+        ["Uso", "Respaldo y desplazamiento de consumo (peak shaving)"],
+        ["Garantía", "10 años"]
+      ]
+    },
+    {"preset": "estr_coplanar", "paneles": 30}
+  ],
+  "condiciones": [
+    ["Formas de pago", "50% al firmar contrato y 50% luego de la instalación, sin interés. Alternativamente, financiación propia Oriens en cuotas en dólares."],
+    ["Qué incluye", "Central llave en mano: asesoramiento, ingeniería, instalación y puesta en marcha."],
+    ["Garantías", "Garantía internacional de productos (Jinko, Deye) más garantía de instalación Oriens."],
+    ["Plazo", "15 a 20 días corridos desde el pago del anticipo."],
+    ["Inyección", "Alta como Usuario-Generador según Ley 27.424; los tiempos dependen de la cooperativa de Ranchos."]
+  ]
+}

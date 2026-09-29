@@ -1,0 +1,117 @@
+@page { size:A4; margin:24mm 16mm 16mm 16mm;
+  @top-left { content:element(rh); vertical-align:middle; }
+  @bottom-center { content:var(--pie) " · " counter(page) " / " counter(pages);
+    font-family:Lato; font-size:7.5px; color:#b3b3b3; letter-spacing:.3px; }
+}
+:root{--pie:"ORIENS ENERGIA SOLAR";}
+*{box-sizing:border-box;}
+body{font-family:Lato,sans-serif;color:#454545;font-size:10.2px;line-height:1.55;margin:0;}
+
+/* ---- header corrido ---- */
+.rh{position:running(rh);width:100%;display:flex;align-items:flex-end;justify-content:space-between;
+  padding-top:3mm;}
+.rh .rht{font-family:Poppins;font-size:8px;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;color:#8a8a8a;}
+.rh .rhc{font-size:9px;color:#b4b4b4;margin-top:1px;}
+.rh svg{height:30px;width:auto;}
+
+.page{page-break-after:always;}
+.page:last-child{page-break-after:auto;}
+
+h1{font-family:Poppins;font-size:27px;font-weight:700;margin:2px 0 5px;color:#242424;letter-spacing:-.4px;}
+.sub{color:#8f8f8f;font-size:12px;margin:0 0 14px;font-weight:300;}
+.eyebrow{color:#c99320;font-family:Poppins;font-size:8.6px;font-weight:600;letter-spacing:2.6px;text-transform:uppercase;margin:0 0 3px;}
+h2{font-family:Poppins;font-size:16px;font-weight:600;color:#242424;margin:0 0 5px;}
+h3{font-family:Poppins;font-size:10.5px;font-weight:600;color:#242424;margin:0 0 3px;}
+p{margin:0 0 9px;}
+hr{border:0;border-top:1px solid #eae7e1;margin:12px 0;}
+b,strong{color:#242424;font-weight:700;}
+.prep{font-family:Poppins;font-size:8px;letter-spacing:2px;color:#b4b4b4;text-transform:uppercase;margin:0 0 3px;font-weight:600;}
+.prepline{font-size:10px;color:#555;margin:0 0 12px;}
+.prepline b{margin-right:14px;}
+.prepline span{color:#9a9a9a;margin-right:14px;}
+.muted{color:#9a9a9a;}
+.small{font-size:8.6px;color:#a6a6a6;margin-top:3px;}
+
+/* ---- tira de stats ---- */
+.stats{display:flex;gap:9px;margin:13px 0 6px;border-top:2px solid #e0a92a;padding-top:0;}
+.stat{flex:1;background:#f7f5f0;padding:10px 12px;}
+.stat .big{font-family:Poppins;font-size:17px;font-weight:700;color:#242424;line-height:1.15;}
+.stat .cap{font-size:8.4px;color:#8f8f8f;margin-top:2px;}
+.stat.g .big{color:#4e9e3a;}
+.stat.gold .big{color:#c99320;}
+
+/* ---- tarjetas de alternativa ---- */
+.cards{display:flex;gap:11px;margin:10px 0 4px;}
+.card{flex:1;background:#faf9f6;border:1px solid #ece9e2;border-radius:13px;padding:12px 14px;}
+.card.gold{background:#fdf9ef;border-color:#f0e3c4;}
+.card .tag{display:inline-block;width:22px;height:3px;border-radius:2px;background:#b7b7b7;margin-bottom:7px;}
+.card.gold .tag{background:#e0a92a;}
+.card .ttl{font-family:Poppins;font-size:12px;font-weight:600;color:#242424;}
+.card .pr{font-family:Poppins;font-size:15px;font-weight:700;color:#242424;margin:5px 0 1px;}
+.card.gold .pr{color:#c99320;}
+.card .txt{font-size:9px;color:#6d6d6d;line-height:1.45;margin-top:5px;}
+.kv{display:flex;justify-content:space-between;font-size:9.2px;padding:3px 0;border-bottom:1px solid #efece6;}
+.kv:last-child{border-bottom:none;}
+.kv b{color:#242424;}
+
+/* ---- tablas ---- */
+table{width:100%;border-collapse:collapse;margin:6px 0;}
+th{text-align:left;font-family:Poppins;font-size:7.4px;letter-spacing:1px;text-transform:uppercase;color:#a2a2a2;font-weight:600;padding:5px 7px;border-bottom:1.5px solid #e2ded7;}
+td{font-size:9.4px;padding:4.5px 7px;border-bottom:1px solid #f0eee9;color:#4b4b4b;}
+td.b,th.b{font-weight:700;color:#242424;}
+td.r,th.r{text-align:right;}
+td.c,th.c{text-align:center;}
+tr.total td{font-family:Poppins;font-weight:700;color:#242424;font-size:10px;border-top:2px solid #d6d2ca;border-bottom:none;padding-top:7px;}
+tr.total2 td{font-family:Poppins;font-weight:700;color:#c99320;font-size:12.5px;border-bottom:none;padding-top:1px;}
+tr.hl td{background:#fbf3df;font-weight:700;color:#242424;}
+tr.sub td{color:#8f8f8f;border-bottom:none;font-size:9.2px;padding-top:2px;padding-bottom:2px;}
+table.comp td:first-child{color:#8a8a8a;width:38%;}
+table.comp td{font-size:9.6px;}
+
+/* ---- nota ---- */
+.note{border-radius:12px;background:#fbf7ec;border:1px solid #f0e6cc;padding:9px 13px;font-size:8.9px;color:#6b6357;margin:10px 0;line-height:1.5;}
+.note b{color:#7a6a3c;}
+
+/* ---- flujo ---- */
+.flow{display:flex;align-items:stretch;gap:0;margin:12px 0 14px;}
+.flow .n{flex:1;background:#f7f5f0;border-top:2px solid #e0a92a;padding:8px 6px;text-align:center;}
+.flow .ar{display:flex;align-items:center;justify-content:center;width:22px;color:#c99320;font-size:13px;}
+.flow .n .t{font-family:Poppins;font-size:8.6px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#242424;}
+.flow .n .s{font-size:8.2px;color:#9a9a9a;}
+
+/* ---- bloques dos columnas ---- */
+.two{display:flex;gap:16px;}
+.two>div{flex:1;}
+.box{background:#f7f5f0;padding:10px 13px;margin-bottom:9px;}
+.box h3{margin-bottom:2px;}
+.box p{font-size:9.2px;color:#6d6d6d;margin:0;}
+
+/* ---- ampliacion ---- */
+.grow{display:flex;gap:14px;margin-top:10px;}
+.grow>div{flex:1;border-left:3px solid #e0a92a;padding-left:10px;}
+.grow .g1{font-family:Poppins;font-size:8px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#b4b4b4;}
+.grow .g2{font-size:10px;color:#454545;}
+.grow .g3{font-family:Poppins;font-size:10.5px;font-weight:600;color:#c99320;}
+
+/* ---- fichas ---- */
+.ficha{display:flex;gap:14px;align-items:center;border:1px solid #ece9e2;border-radius:14px;padding:11px 14px;margin-bottom:10px;background:#fdfdfc;}
+.ficha.noimg{display:block;}
+.fimg{width:140px;min-width:140px;height:105px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:6px;}
+.fimg img{max-width:100%;max-height:100%;object-fit:contain;}
+.fbody{flex:1;}
+.fcat{font-family:Poppins;font-size:8.2px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:#c99320;}
+.fname{font-family:Poppins;font-size:11.5px;font-weight:600;color:#242424;margin:1px 0 1px;}
+.fsub{font-size:9px;color:#9a9a9a;font-style:italic;margin-bottom:5px;}
+table.ft{margin:0;}
+table.ft td{border-bottom:1px solid #f2f0eb;padding:2.4px 0;font-size:8.8px;}
+table.ft td.k{color:#9a9a9a;width:26%;padding-right:6px;}
+table.ft td.v{font-weight:700;color:#242424;width:24%;padding-right:12px;}
+
+/* ---- cierre ---- */
+.close{text-align:center;margin-top:16px;}
+.close .t{font-family:Poppins;font-size:14px;font-weight:600;color:#242424;}
+.close .c{font-size:9.2px;color:#8f8f8f;margin-top:3px;}
+
+/* listas dentro de cajas */
+.box ul{margin:4px 0 0 14px;padding:0;}
+.box li{font-size:9.2px;color:#6d6d6d;margin-bottom:2px;}

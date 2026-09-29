@@ -1,0 +1,82 @@
+{
+  "titulo": "PROPUESTA INTEGRAL OFF-GRID",
+  "subtitulo": "Central solar fotovoltaica · Análisis del escenario actual",
+  "cliente": "Ferrero Martín Alberto",
+  "ubicacion": "City Bell · Provincia de Buenos Aires",
+  "fecha": "11 de mayo de 2026",
+  "factura": {
+    "titular": "Ferrero Martín Alberto",
+    "domicilio": "21 nº 642 e/ 10 y 11 · City Bell · Provincia de Buenos Aires",
+    "distribuidora": "Edelap",
+    "tarifa": "T1R2 Residencial · Segmento N1 — Ingresos altos (sin subsidio)",
+    "periodo": "14/02/2026 al 17/03/2026 (31 días)",
+    "consumo_periodo_kwh": 669,
+    "consumo_periodo_kwh_dia": 21.6,
+    "consumo_prom_mensual_kwh": 600,
+    "consumo_anual_kwh": 7200,
+    "valor_kwh_variable": 174.57,
+    "costo_fijo_periodo": 46746,
+    "impuestos_directos": 26604,
+    "impuestos_indirectos": 55164,
+    "costo_real_kwh": 202,
+    "total_facturado_periodo": 253163
+  },
+  "sistema_compartido": {
+    "n_paneles": 10,
+    "panel_wp": 550,
+    "kwp": 5.5,
+    "inversor_kw": 6,
+    "generacion_anual_kwh": 7425
+  },
+  "metodologia": {
+    "orientacion": "al norte",
+    "inclinacion_deg": 15,
+    "perdidas_frac": 0.10,
+    "degradacion": 0.005,
+    "autoconsumo_dia_frac": 0.35,
+    "reserva_bateria_kwh": 4,
+    "costo_real_kwh": 202,
+    "tc": 1420,
+    "aumento_anual": 0.10,
+    "tope_usd_kwh": 0.18,
+    "mantenimiento": 0.01
+  },
+  "escenarios": [
+    {
+      "nombre": "Sistema Off-Grid 16 kWh",
+      "resumen": "Inversor 6 kW + 16 kWh en batería",
+      "bateria_kwh": 16,
+      "n_baterias": 1,
+      "autonomia_hs": 24,
+      "inversion_usd": 8150,
+      "iva": 0.21,
+      "componentes": [
+        ["Paneles solares", "Mono Perc Amerisolar 144 celdas 550 Wp · All Black", "10"],
+        ["Estructura", "Kit coplanar de aluminio", "3"],
+        ["Inversor off-grid", "Deye Off Grid 6 kW · IP65 · 1 MPPT · 5 años de garantía", "1"],
+        ["Batería", "Litio Deye 16 kWh · ≥6.000 ciclos · 10 años de garantía", "1"],
+        ["Mano de obra", "Ingeniería, puesta en marcha, MO especializada y garantía", "1"],
+        ["Mat. eléctricos", "Materiales eléctricos y de ferretería", "1"],
+        ["Flete", "Transporte de equipos y personas", "1"]
+      ]
+    },
+    {
+      "nombre": "Sistema Off-Grid 10 kWh",
+      "resumen": "Inversor 6 kW + 10,24 kWh en batería",
+      "bateria_kwh": 10.24,
+      "n_baterias": 2,
+      "autonomia_hs": 14,
+      "inversion_usd": 7181,
+      "iva": 0.21,
+      "componentes": [
+        ["Paneles solares", "Mono Perc Amerisolar 144 celdas 550 Wp · All Black", "10"],
+        ["Estructura", "Kit coplanar de aluminio", "3"],
+        ["Inversor off-grid", "Deye Off Grid 6 kW · IP65 · 1 MPPT · 5 años de garantía", "1"],
+        ["Batería", "Litio Deye 5,12 kWh · IP21 · 10 años de garantía", "2"],
+        ["Mano de obra", "Ingeniería, puesta en marcha, MO especializada y garantía", "1"],
+        ["Mat. eléctricos", "Materiales eléctricos y de ferretería", "1"],
+        ["Flete", "Transporte de equipos y personas", "1"]
+      ]
+    }
+  ]
+}
